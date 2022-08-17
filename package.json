@@ -1,17 +1,28 @@
 {
   "name": "my-site-2",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Personal website of Manpreet Bhatti, a Computer Science student at the University of Toronto Scarborough. If you'd like to see what I have to showcase, visit https://github.com/Manpreet-Bhatti",
+  "private": false,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
+    "prettier": "prettier --write .",
     "lint": "next lint"
   },
+  "keywords": [],
+  "author": "Manpreet Bhatti",
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.8",
+    "@chakra-ui/react": "^2.2.8",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "framer-motion": "^7.1.1",
     "next": "12.2.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "three": "^0.143.0"
   },
   "devDependencies": {
     "eslint": "8.22.0",
