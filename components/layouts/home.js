@@ -15,6 +15,7 @@ const Home = ({ children, router }) => {
         <meta property="og:site_name" content="Manpreet Bhatti" />
         <meta name="og:title" content="Manpreet Bhatti" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="MB-mono.svg" />
         <title>Manpreet Bhatti | Home</title>
       </Head>
       <NavBar path={router.asPath} />
