@@ -15,7 +15,7 @@ const Home = ({ children, router }) => {
         <meta property="og:site_name" content="Manpreet Bhatti" />
         <meta name="og:title" content="Manpreet Bhatti" />
         <meta property="og:type" content="website" />
-        <title>Manpreet Bhatti - Home</title>
+        <title>Manpreet Bhatti | Home</title>
       </Head>
       <NavBar path={router.asPath} />
       <Container maxW="container.md" pt={14}>
