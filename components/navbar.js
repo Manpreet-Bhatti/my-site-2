@@ -1,9 +1,9 @@
 import Logo from "./logo";
-import NextLink from "next/link";
+import Link from "next/link";
 import {
   Container,
   Box,
-  Link,
+  Link as L,
   Stack,
   Heading,
   Flex,
@@ -23,8 +23,8 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
   return (
-    <NextLink href={href} passHref scroll={false}>
-      <Link
+    <Link href={href} passHref scroll={false}>
+      <L
         p={2}
         _hover={{
           color: theme.colors.redLight,
@@ -34,10 +34,17 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
         {...props}
       >
         {children}
-      </Link>
-    </NextLink>
+      </L>
+    </Link>
   );
 };
+
+const menuItems = [
+  { name: "Home", href: "/" },
+  { name: "Work", href: "/work" },
+  { name: "Projects", href: "/projects" },
+  { name: "Source", href: "https://github.com/Manpreet-Bhatti/my-site-2" },
+];
 
 const Navbar = (props) => {
   const { path } = props;
@@ -97,7 +104,7 @@ const Navbar = (props) => {
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
-            <Menu isLazy id="navbar-menu">
+            <Menu id="navbar-menu" autoSelect={false} isLazy>
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
@@ -120,21 +127,26 @@ const Navbar = (props) => {
                 bg={useColorModeValue("#ffffff", "#1a1a1a")}
                 borderColor={useColorModeValue("#f4f4f4", "whiteAlpha.200")}
               >
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>Home</MenuItem>
-                </NextLink>
-                <NextLink href="/work" passHref>
-                  <MenuItem as={Link}>Work</MenuItem>
-                </NextLink>
-                <NextLink href="/projects" passHref>
-                  <MenuItem as={Link}>Projects</MenuItem>
-                </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/Manpreet-Bhatti/my-site-2"
-                >
-                  View Source
-                </MenuItem>
+                {menuItems.map((item, i) => {
+                  return (
+                    <Link href={item.href} passHref key={i}>
+                      <MenuItem
+                        as={L}
+                        _hover={{
+                          // eslint-disable-next-line react-hooks/rules-of-hooks
+                          bg: useColorModeValue(
+                            theme.colors.hoverLightRedButton,
+                            theme.colors.hoverDarkRedButton
+                          ),
+                          textDecoration: "none",
+                        }}
+                        isExternal={item.name === "Source"}
+                      >
+                        {item.name}
+                      </MenuItem>
+                    </Link>
+                  );
+                })}
               </MenuList>
             </Menu>
           </Box>
