@@ -15,7 +15,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import ThemeToggleButton from "./theme-toggle-button";
+import { ThemeToggleButton } from "./theme-toggle-button";
 import { IoLogoGithub } from "react-icons/io5";
 import theme from "../lib/theme";
 
@@ -57,7 +57,7 @@ const Navbar = (props) => {
         maxW="container.md"
         wrap="wrap"
         align="center"
-        justify="space-between"
+        justifyContent={"space-between"}
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={"tighter"}>
@@ -93,7 +93,7 @@ const Navbar = (props) => {
           </LinkItem>
         </Stack>
 
-        <Box flex={1} align="right">
+        <Flex alignItems="center">
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
@@ -101,14 +101,29 @@ const Navbar = (props) => {
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
-                variant="outline"
                 aria-label="Options"
+                variant="ghost"
+                _hover={{
+                  bg: useColorModeValue(
+                    theme.colors.hoverLightRedButton,
+                    theme.colors.hoverDarkRedButton
+                  ),
+                }}
+                _active={{
+                  bg: useColorModeValue(
+                    theme.colors.activeLightRedButton,
+                    theme.colors.activeDakrRedButton
+                  ),
+                }}
               />
-              <MenuList>
+              <MenuList
+                bg={useColorModeValue("#ffffff", "#1a1a1a")}
+                borderColor={useColorModeValue("#f4f4f4", "whiteAlpha.200")}
+              >
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>Home</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
+                <NextLink href="/work" passHref>
                   <MenuItem as={Link}>Work</MenuItem>
                 </NextLink>
                 <NextLink href="/projects" passHref>
@@ -123,7 +138,7 @@ const Navbar = (props) => {
               </MenuList>
             </Menu>
           </Box>
-        </Box>
+        </Flex>
       </Container>
     </Box>
   );
