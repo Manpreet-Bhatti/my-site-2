@@ -17,13 +17,13 @@ const LogoBox = styled.span`
 `;
 
 const Logo = () => {
-  const footPrintImg = `/images/MB-mono.svg`;
+  const logoImg = `/images/MB-mono.svg`;
 
   return (
     <Link href="/" scroll={false}>
       <a>
         <LogoBox>
-          <Image src={footPrintImg} width={20} height={20} alt="logo" />
+          <Image src={logoImg} width={20} height={20} alt="logo" />
           <Text
             color={useColorModeValue("#424242", "#D7D7D7")}
             fontFamily="'Poppins', sans-serif"
