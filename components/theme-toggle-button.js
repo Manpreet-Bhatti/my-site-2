@@ -29,8 +29,8 @@ const Handle = styled(motion.div)`
 `;
 
 export const ThemeToggleButton = () => {
-  const [isOn, setIsOn] = useState(false);
-  const { toggleColorMode } = useColorMode();
+  const { colorMode, toggleColorMode } = useColorMode();
+  const [isOn, setIsOn] = useState(colorMode === "dark");
   const toggleSwitch = () => {
     setIsOn(!isOn);
     toggleColorMode();
