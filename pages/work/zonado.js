@@ -11,8 +11,8 @@ const Zonado = () => (
         Zonado (Software Development Intern) <Badge>Mar - May 2022</Badge>
       </Title>
       <P>
-        A focused marketplace built for Canadian commercial real estate and sale
-        of business.
+        A specialised marketplace for Canadian commercial real estate and
+        business sales.
       </P>
       <P>
         In a paired-programming team, I reshaped the design and user flow,
