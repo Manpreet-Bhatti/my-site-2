@@ -95,7 +95,7 @@ const CriticalMass = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>React, SCSS, Gatsby</span>
+          <span>React, styled-components, Gatsby</span>
         </ListItem>
       </List>
     </Container>
