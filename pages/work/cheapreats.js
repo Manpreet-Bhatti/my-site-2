@@ -6,7 +6,7 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import theme from "../../lib/theme";
 
 const CheaprEats = () => (
-  <Layout title="Critical Mass">
+  <Layout title="CheaprEats">
     <Container>
       <Title>
         CheaprEats (Front-End Engineering Intern) <Badge>May - Sep 2020</Badge>
