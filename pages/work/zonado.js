@@ -47,9 +47,7 @@ const Zonado = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>
-            React, TypeScript, styled-components, Next.js, Prisma, Chakra UI
-          </span>
+          <span>React, TypeScript, Next.js, Prisma, Chakra UI</span>
         </ListItem>
       </List>
       <WorkImage src="/images/work/zonado_01.png" alt="Active wants table" />
