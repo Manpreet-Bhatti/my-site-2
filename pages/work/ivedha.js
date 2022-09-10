@@ -9,7 +9,7 @@ const Ivedha = () => (
   <Layout title="iVedha">
     <Container>
       <Title>
-        iVedha (Junior Development Intern) <Badge>May - Sept 2021</Badge>
+        iVedha (Junior Development Intern) <Badge>May - Sep 2021</Badge>
       </Title>
       <P>
         A leading global cloud managed services provider for enterprises in
