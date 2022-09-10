@@ -24,9 +24,7 @@ const CriticalMass = () => (
           </Link>
         </ListItem>
       </List>
-      <Text color={theme.colors.redLight} mt={4}>
-        2023 Nissan Maxima
-      </Text>
+      <Text color={theme.colors.redLight}>2023 Nissan Maxima</Text>
       <P>
         I was tasked as the solo developer in the migration of the Nissan Maxima
         from its 2022 counterpart to the 2023 model, hoping to selling to 138k+
@@ -52,9 +50,7 @@ const CriticalMass = () => (
           <span>JavaScript, Adobe AEM, Adobe DAM</span>
         </ListItem>
       </List>
-      <Text color={theme.colors.redLight} mt={4}>
-        Daily Driving Check
-      </Text>
+      <Text color={theme.colors.redLight}>Daily Driving Check</Text>
       <P>
         Once again, as a solo developer, I developed an iOS automation as a
         means to automate documentation for fleet drivers to ensure their
@@ -75,9 +71,7 @@ const CriticalMass = () => (
           <span>Shortcuts</span>
         </ListItem>
       </List>
-      <Text color={theme.colors.redLight} mt={4}>
-        Nissan ARIYA EV Support Chatbot
-      </Text>
+      <Text color={theme.colors.redLight}>Nissan ARIYA EV Support Chatbot</Text>
       <P>
         As the electric vehicle world starts to overshadow its gas rival, many
         customers are in dire need of support and direction in the purchase and
