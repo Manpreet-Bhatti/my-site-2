@@ -14,7 +14,7 @@ const Switch = styled.div`
   border-radius: 50px;
   padding: 5px;
   cursor: pointer;
-  &[data-isOn="true"] {
+  &[data-ison="true"] {
     justify-content: flex-end;
     background-color: rgba(149, 52, 235, 0.4);
   }
@@ -37,7 +37,7 @@ export const ThemeToggleButton = () => {
   };
 
   return (
-    <Switch data-isOn={isOn} onClick={toggleSwitch}>
+    <Switch data-ison={isOn} onClick={toggleSwitch}>
       <Handle
         layout
         transition={spring}
