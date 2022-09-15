@@ -21,7 +21,10 @@ import theme from "../lib/theme";
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href;
-  const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
+  const inactiveColor = useColorModeValue(
+    theme.colors.text,
+    theme.colors.darkText
+  );
   return (
     <Link href={href} passHref scroll={false}>
       <L

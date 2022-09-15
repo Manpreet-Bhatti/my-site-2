@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Text, useColorModeValue } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
 const LogoBox = styled.span`
@@ -24,12 +24,7 @@ const Logo = () => {
       <a>
         <LogoBox>
           <Image src={logoImg} width={20} height={20} alt="logo" />
-          <Text
-            color={useColorModeValue("#424242", "#D7D7D7")}
-            fontFamily="'Poppins', sans-serif"
-            fontWeight="bold"
-            ml={1}
-          >
+          <Text fontFamily="'Poppins', sans-serif" fontWeight="bold" ml={1}>
             Manpreet Bhatti
           </Text>
         </LogoBox>
