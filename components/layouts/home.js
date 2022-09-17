@@ -15,7 +15,10 @@ const Home = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Manpreet's homepage" />
+        <meta
+          name="description"
+          content="All about Manpreet Bhatti; I'm a front-end (aspiring full-stack) developer based in Canada! Get to know me as I showcase my projects, skills, and more!"
+        />
         <meta name="author" content="Manpreet Bhatti" />
         <link rel="apple-touch-icon" href="MB-mono.svg" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
