@@ -185,7 +185,7 @@ const Home = () => (
             consumption and transportation efficiency
           </GridItem>
           <GridItem
-            href="https://www.inkdrop.app/"
+            href="https://project-structure-readme.netlify.app/"
             title="Auto README Docs"
             thumbnail={thumbAutoReadmeDocs}
           >
