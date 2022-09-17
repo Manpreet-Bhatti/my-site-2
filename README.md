@@ -1,34 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <img alt="logo" src="./src/images/logo.svg" width="60" />
+</p>
+<h1 align="center">
+  my-site
+</h1>
 
-## Getting Started
+![my-site status](https://img.shields.io/website?down_color=red&down_message=offline&label=my-site&up_message=online&url=https%3A%2F%2Fmanpreetbhatti.com%2F)
 
-First, run the development server:
+![my-site release](https://img.shields.io/github/release/Manpreet-Bhatti/my-site-2.svg?style=popout-square) ![my-site issues](https://img.shields.io/github/issues/Manpreet-Bhatti/my-site-2.svg?style=popout-square) ![my-site top language](https://img.shields.io/github/languages/top/Manpreet-Bhatti/my-site-2.svg?style=popout-square) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Gatsby](https://img.shields.io/badge/Gatsby-663399?style=for-the-badge&logo=gatsby&logoColor=white) ![my-site last commit](https://img.shields.io/github/last-commit/Manpreet-Bhatti/my-site-2.svg?style=popout-square) ![my-site license](https://img.shields.io/github/license/Manpreet-Bhatti/my-site-2.svg?style=popout-square) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-```bash
-npm run dev
-# or
-yarn dev
+### Personal website of Manpreet Bhatti
+
+Check out this [live demo](https://manpreetbhatti.com/) to see my-site in action.
+
+# Getting started
+
+## Let's Install
+
+Install modules
+
+```shell
+cd my-site
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Let's Build
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Start a development server
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```shell
+npm run dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+or
+Create and start a production build
 
-## Learn More
+```shell
+npm run build
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Let's Customize
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> Fork this project for your customization ideas!
+>
+> Tip: You should see if these changes work in the development server before building and starting.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Fonts
 
-## Deploy on Vercel
+To add custom fonts, make sure to import them into `./components/fonts.js` and change `./components/logo.js` and `./lib/theme.js` accordingly.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Colours
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To change colours (or add your own), edit `./lib/theme.js` to your liking. There are many instances where colours weren't used from the theme so keep an eye out (colours will be more centralized in the near future)!
+
+### Skills
+
+To showcase your skills, edit `./src/sections/Skills/data.js` with your own expertise!
+
+### Socials
+
+Let others know where they can find you by editing `./pages/index.js` and add your own contact links near the end.
+
+## Updating
+
+Although during the development server live changes will be done, I recommend stopping the server, running `npm run clean` to clear cache, and rerunning `npm run start`.
+
+Once everything looks fine, once again run `npm run clean` to prepare yourself for a production build.
+
+## Let's Publish
+
+There are many great hosting platforms that will have services to showcase your static websites. I used Next.js for this website which goes perfecty with [Vercel](https://vercel.com/); I advise you use it!
+
+## License
+
+![my-site license](https://img.shields.io/github/license/Manpreet-Bhatti/my-site.svg?style=popout-square)
