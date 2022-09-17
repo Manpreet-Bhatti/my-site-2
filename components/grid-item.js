@@ -21,9 +21,9 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 );
 
-export const WorkGridItem = ({ children, id, title, thumbnail }) => (
+export const DynamicGridItem = ({ children, type, id, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
-    <NextLink href={`/work/${id}`} passHref scroll={false}>
+    <NextLink href={`/${type}/${id}`} passHref scroll={false}>
       <LinkBox cursor="pointer">
         <Image
           src={thumbnail}
