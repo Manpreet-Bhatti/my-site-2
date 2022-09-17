@@ -1,6 +1,6 @@
 import { Badge, Container, Link, List, ListItem, Text } from "@chakra-ui/react";
 import Layout from "../../components/layouts/single-column";
-import { Meta, Title } from "../../components/work";
+import { Meta, Title, WorkImage } from "../../components/work";
 import P from "../../components/paragraph";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import theme from "../../lib/theme";
@@ -76,6 +76,22 @@ const CheaprEats = () => (
           <span>React, TypeScript</span>
         </ListItem>
       </List>
+      <WorkImage
+        src="/images/work/autoreadmedocs_01.png"
+        alt="Auto README Docs front page"
+      />
+      <WorkImage
+        src="/images/work/autoreadmedocs_02.png"
+        alt="Auto README Docs badges"
+      />
+      <WorkImage
+        src="/images/work/autoreadmedocs_03.png"
+        alt="Auto README Docs markdown tree"
+      />
+      <WorkImage
+        src="/images/work/autoreadmedocs_04.png"
+        alt="Auto README Docs markdown tree continued"
+      />
     </Container>
   </Layout>
 );
