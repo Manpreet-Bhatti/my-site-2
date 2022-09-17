@@ -62,12 +62,6 @@ To showcase your skills, edit `./src/sections/Skills/data.js` with your own expe
 
 Let others know where they can find you by editing `./pages/index.js` and add your own contact links near the end.
 
-## Updating
-
-Although during the development server live changes will be done, I recommend stopping the server, running `npm run clean` to clear cache, and rerunning `npm run start`.
-
-Once everything looks fine, once again run `npm run clean` to prepare yourself for a production build.
-
 ## Let's Publish
 
 There are many great hosting platforms that will have services to showcase your static websites. I used Next.js for this website which goes perfecty with [Vercel](https://vercel.com/); I advise you use it!
