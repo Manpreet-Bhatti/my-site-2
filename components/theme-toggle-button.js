@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { Icon } from "@chakra-ui/react";
@@ -8,7 +8,7 @@ import styled from "@emotion/styled";
 const Switch = styled.div`
   width: 60px;
   height: 30px;
-  background-color: rgba(235, 149, 52, 0.4);
+  background-color: rgba(149, 52, 235, 0.4);
   display: flex;
   justify-content: flex-start;
   border-radius: 50px;
@@ -16,7 +16,7 @@ const Switch = styled.div`
   cursor: pointer;
   &[data-ison="true"] {
     justify-content: flex-end;
-    background-color: rgba(149, 52, 235, 0.4);
+    background-color: rgba(235, 149, 52, 0.4);
   }
 `;
 
@@ -30,11 +30,14 @@ const Handle = styled(motion.div)`
 
 export const ThemeToggleButton = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const [isOn, setIsOn] = useState(colorMode === "dark");
+  const [isOn, setIsOn] = useState(null);
   const toggleSwitch = () => {
     setIsOn(!isOn);
     toggleColorMode();
   };
+  useEffect(() => {
+    setIsOn(colorMode === "light");
+  }, [colorMode]);
 
   return (
     <Switch data-ison={isOn} onClick={toggleSwitch}>
