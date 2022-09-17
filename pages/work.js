@@ -1,5 +1,5 @@
 import { Container, Divider, Heading, SimpleGrid } from "@chakra-ui/react";
-import { WorkGridItem } from "../components/grid-item";
+import { DynamicGridItem } from "../components/grid-item";
 import Layout from "../components/layouts/single-column";
 import Section from "../components/section";
 
@@ -17,26 +17,37 @@ const Work = () => (
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem
+          <DynamicGridItem
+            type="work"
             id="criticalmass"
             title="Critical Mass"
             thumbnail={thumbCriticalMass}
           >
             A full-service digital experience design agency with a relentless
             focus on the customer
-          </WorkGridItem>
+          </DynamicGridItem>
         </Section>
         <Section>
-          <WorkGridItem id="zonado" title="Zonado" thumbnail={thumbZonado}>
+          <DynamicGridItem
+            type="work"
+            id="zonado"
+            title="Zonado"
+            thumbnail={thumbZonado}
+          >
             A specialised marketplace for Canadian commercial real estate and
             business sales
-          </WorkGridItem>
+          </DynamicGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="ivedha" title="iVedha" thumbnail={thumbIvedha}>
+          <DynamicGridItem
+            type="work"
+            id="ivedha"
+            title="iVedha"
+            thumbnail={thumbIvedha}
+          >
             A leading global cloud managed services provider for enterprises in
             Canada, USA, Mexico and across the world
-          </WorkGridItem>
+          </DynamicGridItem>
         </Section>
       </SimpleGrid>
       <Section delay={0.2}>
@@ -46,24 +57,26 @@ const Work = () => (
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.3}>
-            <WorkGridItem
+            <DynamicGridItem
+              type="work"
               id="cheapreats"
               title="CheaprEats"
               thumbnail={thumbCheaprEats}
             >
               A food pickup service that facilitates interactions between
               customers and vendors while targeting post-secondary students
-            </WorkGridItem>
+            </DynamicGridItem>
           </Section>
           <Section delay={0.3}>
-            <WorkGridItem
+            <DynamicGridItem
+              type="work"
               id="benchmarkedstudios"
               title="benchMarked Studios"
               thumbnail={thumbBenchMarkedStudios}
             >
               A consulting agency that looks to solve problems with robust,
               tested, specifically engineered software
-            </WorkGridItem>
+            </DynamicGridItem>
           </Section>
         </SimpleGrid>
       </Section>
