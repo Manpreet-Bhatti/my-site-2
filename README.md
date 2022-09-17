@@ -74,4 +74,4 @@ There are many great hosting platforms that will have services to showcase your 
 
 ## License
 
-![my-site license](https://img.shields.io/github/license/Manpreet-Bhatti/my-site.svg?style=popout-square)
+![my-site license](https://img.shields.io/github/license/Manpreet-Bhatti/my-site-2.svg?style=popout-square)
