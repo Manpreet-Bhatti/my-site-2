@@ -69,7 +69,7 @@ const ComputerModel = () => {
 
         if (frame <= 100) {
           const p = initialCameraPosition;
-          const rotSpeed = -easeOutCircle(frame / 120) * Math.PI * 20;
+          const rotSpeed = -easeOutCircle(frame / 120) * Math.PI * 10;
           camera.position.y = 5;
           camera.position.x =
             p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed);
