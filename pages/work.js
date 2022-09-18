@@ -1,4 +1,11 @@
-import { Container, Divider, Heading, SimpleGrid } from "@chakra-ui/react";
+import {
+  Container,
+  Divider,
+  Heading,
+  SimpleGrid,
+  Link,
+  Text,
+} from "@chakra-ui/react";
 import { DynamicGridItem } from "../components/grid-item";
 import Layout from "../components/layouts/single-column";
 import Section from "../components/section";
@@ -12,7 +19,18 @@ import thumbBenchMarkedStudios from "../public/images/work/benchmarkedstudios.jp
 const Work = () => (
   <Layout title="Recent work">
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
+      <Text>
+        Need a formal review? Check out{" "}
+        <Link
+          variant={"red-link"}
+          href="https://www.res.manpreetbhatti.com/"
+          isExternal
+        >
+          my resume
+        </Link>
+        !
+      </Text>
+      <Heading as="h3" fontSize={20} my={4}>
         Recent work
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
