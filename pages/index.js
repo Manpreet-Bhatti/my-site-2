@@ -132,7 +132,18 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           🕸 On the web
         </Heading>
-        <List>
+        <Paragraph>
+          Need a formal review of who I am? Check out my{" "}
+          <Link
+            variant={"red-link"}
+            href="https://www.res.manpreetbhatti.com/"
+            isExternal
+          >
+            resume
+          </Link>
+          !
+        </Paragraph>
+        <List mt={2}>
           <ListItem>
             <Link
               href="https://www.linkedin.com/in/manpreet1bhatti/"
