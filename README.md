@@ -56,7 +56,7 @@ To change colours (or add your own), edit `./lib/theme.js` to your liking. There
 
 ### Skills
 
-To showcase your skills, edit `./src/sections/Skills/data.js` with your own expertise!
+To showcase your skills, edit `./pages/projects.js` and add your projects to `./pages/projects` and/or edit `./pages/work.js` and add your work to `./pages/work`!
 
 ### Socials
 
