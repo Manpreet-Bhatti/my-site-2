@@ -39,7 +39,7 @@ const Home = () => (
         bg={useColorModeValue("#f4f4f4", "whiteAlpha.200")}
         css={{ backdropFilter: "blur(10px)" }}
       >
-        Hey, I&apos;m a front-end (aspiring full-stack) developer based in{" "}
+        I&apos;m a front-end (aspiring full-stack) developer based in{" "}
         <span title="Canada" aria-label="Canada">
           🇨🇦
         </span>
