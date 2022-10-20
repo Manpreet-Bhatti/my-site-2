@@ -9,7 +9,7 @@ const CriticalMass = () => (
   <Layout title="Critical Mass">
     <Container>
       <Title>
-        Critical Mass (Front-end Development Intern){" "}
+        Critical Mass (Front End Development Intern){" "}
         <Badge>May - Aug 2022</Badge>
       </Title>
       <P>

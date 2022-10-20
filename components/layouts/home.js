@@ -17,7 +17,7 @@ const Home = ({ children, router }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="All about Manpreet Bhatti; I'm a front-end (aspiring full-stack) developer based in Canada! Get to know me as I showcase my projects, skills, and more!"
+          content="All about Manpreet Bhatti; I'm a front end (aspiring full stack) developer based in Canada! Get to know me as I showcase my projects, skills, and more!"
         />
         <meta name="author" content="Manpreet Bhatti" />
         <link rel="apple-touch-icon" href="MB-mono.svg" />

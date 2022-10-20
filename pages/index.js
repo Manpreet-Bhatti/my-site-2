@@ -39,7 +39,7 @@ const Home = () => (
         bg={useColorModeValue("#f4f4f4", "whiteAlpha.200")}
         css={{ backdropFilter: "blur(10px)" }}
       >
-        I&apos;m a front-end (aspiring full-stack) developer based in{" "}
+        I&apos;m a front end (aspiring full stack) developer based in{" "}
         <span title="Canada" aria-label="Canada">
           🇨🇦
         </span>
@@ -51,7 +51,7 @@ const Home = () => (
             Manpreet Bhatti
           </Heading>
           <Text color={theme.colors.redLight}>
-            Previously @ Critical Mass (Front-end Developer)
+            Previously @ Critical Mass (Front End Developer)
           </Text>
         </Box>
         <Box
@@ -85,12 +85,12 @@ const Home = () => (
           👨🏽‍💻 Who I am
         </Heading>
         <Paragraph>
-          I was formerly a front-end developer at{" "}
+          I was formerly a front end developer at{" "}
           <Link variant="red-link" href="https://criticalmass.com/" isExternal>
             Critical Mass
           </Link>
           , where I built various features and components for Nissan and
-          Infiniti. Based in Ontario, I have a passion for all things front-end
+          Infiniti. Based in Ontario, I have a passion for all things front end
           with a keen mind to create beautiful, intuitive, and performant user
           experiences. However, I look to grow as a developer and transition
           into a full stack environment. I am currently in search of full-time

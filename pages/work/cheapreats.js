@@ -9,7 +9,7 @@ const CheaprEats = () => (
   <Layout title="CheaprEats">
     <Container>
       <Title>
-        CheaprEats (Front-End Engineering Intern) <Badge>May - Sep 2020</Badge>
+        CheaprEats (Front End Engineering Intern) <Badge>May - Sep 2020</Badge>
       </Title>
       <P>
         A food pickup service that facilitates interactions between customers
