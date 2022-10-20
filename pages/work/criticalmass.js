@@ -1,6 +1,6 @@
 import { Badge, Container, Link, List, ListItem, Text } from "@chakra-ui/react";
 import Layout from "../../components/layouts/single-column";
-import { Meta, Title } from "../../components/work";
+import { Meta, Title, WorkImage } from "../../components/work";
 import P from "../../components/paragraph";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import theme from "../../lib/theme";
@@ -98,6 +98,10 @@ const CriticalMass = () => (
           <span>React, Gatsby</span>
         </ListItem>
       </List>
+      <WorkImage
+        src="/images/work/criticalmass_01.jpg"
+        alt="2023 Nissan Maxima"
+      />
     </Container>
   </Layout>
 );
