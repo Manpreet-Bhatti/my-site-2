@@ -50,14 +50,14 @@ const Zonado = () => (
           <span>React, TypeScript, Next.js, Prisma, Chakra UI</span>
         </ListItem>
       </List>
-      <WorkImage src="/images/work/zonado_01.png" alt="Active wants table" />
-      <WorkImage src="/images/work/zonado_02.png" alt="Zonado landing page" />
-      <WorkImage src="/images/work/zonado_03.png" alt="Property image drawer" />
+      <WorkImage src="/images/work/zonado_01.jpg" alt="Active wants table" />
+      <WorkImage src="/images/work/zonado_02.jpg" alt="Zonado landing page" />
+      <WorkImage src="/images/work/zonado_03.jpg" alt="Property image drawer" />
       <WorkImage
-        src="/images/work/zonado_04.png"
+        src="/images/work/zonado_04.jpg"
         alt="Property image slideshow"
       />
-      <WorkImage src="/images/work/zonado_05.png" alt="Zonado plan pricing" />
+      <WorkImage src="/images/work/zonado_05.jpg" alt="Zonado plan pricing" />
     </Container>
   </Layout>
 );

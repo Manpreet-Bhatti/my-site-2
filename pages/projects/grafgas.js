@@ -47,33 +47,33 @@ const GrafGas = () => (
           <span>React, Django, AWS, PostgreSQL</span>
         </ListItem>
       </List>
-      <WorkImage src="/images/projects/grafgas_01.png" alt="Graf-Gas login" />
+      <WorkImage src="/images/projects/grafgas_01.jpg" alt="Graf-Gas login" />
       <WorkImage
-        src="/images/projects/grafgas_02.png"
+        src="/images/projects/grafgas_02.jpg"
         alt="Graf-Gas company info"
       />
       <WorkImage
-        src="/images/projects/grafgas_03.png"
+        src="/images/projects/grafgas_03.jpg"
         alt="Graf-Gas front page"
       />
       <WorkImage
-        src="/images/projects/grafgas_04.png"
+        src="/images/projects/grafgas_04.jpg"
         alt="Graf-Gas profile page"
       />
       <WorkImage
-        src="/images/projects/grafgas_05.png"
+        src="/images/projects/grafgas_05.jpg"
         alt="Graf-Gas profile page in edit mode"
       />
       <WorkImage
-        src="/images/projects/grafgas_06.png"
+        src="/images/projects/grafgas_06.jpg"
         alt="Graf-Gas fuel consumption table"
       />
       <WorkImage
-        src="/images/projects/grafgas_07.png"
+        src="/images/projects/grafgas_07.jpg"
         alt="Graf-Gas fuel consumption KPIs"
       />
       <WorkImage
-        src="/images/projects/grafgas_08.png"
+        src="/images/projects/grafgas_08.jpg"
         alt="Graf-Gas fuel consumption KPIs continued"
       />
     </Container>

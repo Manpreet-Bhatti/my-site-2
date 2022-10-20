@@ -77,19 +77,19 @@ const CheaprEats = () => (
         </ListItem>
       </List>
       <WorkImage
-        src="/images/work/autoreadmedocs_01.png"
+        src="/images/work/autoreadmedocs_01.jpg"
         alt="Auto README Docs front page"
       />
       <WorkImage
-        src="/images/work/autoreadmedocs_02.png"
+        src="/images/work/autoreadmedocs_02.jpg"
         alt="Auto README Docs badges"
       />
       <WorkImage
-        src="/images/work/autoreadmedocs_03.png"
+        src="/images/work/autoreadmedocs_03.jpg"
         alt="Auto README Docs markdown tree"
       />
       <WorkImage
-        src="/images/work/autoreadmedocs_04.png"
+        src="/images/work/autoreadmedocs_04.jpg"
         alt="Auto README Docs markdown tree continued"
       />
     </Container>
