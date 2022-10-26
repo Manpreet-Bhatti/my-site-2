@@ -36,6 +36,16 @@ const AutoReadmeDocs = () => (
           </Link>
         </ListItem>
         <ListItem>
+          <Meta>GitHub</Meta>
+          <Link
+            variant="red-link"
+            href="https://github.com/cheapreats/auto-readme-docs"
+          >
+            https://github.com/cheapreats/auto-readme-docs{" "}
+            <ExternalLinkIcon mx="2px" />
+          </Link>
+        </ListItem>
+        <ListItem>
           <Meta>Platform</Meta>
           <span>Web</span>
         </ListItem>
