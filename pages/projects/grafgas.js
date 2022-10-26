@@ -44,7 +44,7 @@ const GrafGas = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>React, Django, AWS, PostgreSQL</span>
+          <span>React, Redux, Django, AWS, PostgreSQL</span>
         </ListItem>
       </List>
       <WorkImage src="/images/projects/grafgas_01.jpg" alt="Graf-Gas login" />
