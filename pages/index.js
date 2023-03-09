@@ -51,7 +51,7 @@ const Home = () => (
             Manpreet Bhatti
           </Heading>
           <Text color={theme.colors.redLight}>
-            Previously @ Critical Mass (Front End Developer)
+            Front-end Engineer @ Agentnoon
           </Text>
         </Box>
         <Box
