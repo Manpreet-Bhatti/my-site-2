@@ -20,7 +20,7 @@ const Logo = () => {
   const logoImg = `/images/MB-mono.svg`;
 
   return (
-    <Link href="/" scroll={false}>
+    <Link href="/" scroll={false} legacyBehavior>
       <a>
         <LogoBox>
           <Image src={logoImg} width={20} height={20} alt="logo" />
