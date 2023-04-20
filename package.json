@@ -4,7 +4,7 @@
   "description": "Personal website of Manpreet Bhatti, a Computer Science student at the University of Toronto Scarborough. If you'd like to see what I have to showcase, visit https://github.com/Manpreet-Bhatti",
   "private": false,
   "scripts": {
-    "dev": "next dev -H 0.0.0.0",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "prettier": "prettier --write .",
@@ -28,10 +28,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
-    "three": "^0.150.0"
+    "three": "^0.151.3"
   },
   "devDependencies": {
-    "eslint": "8.23.1",
-    "eslint-config-next": "12.3.0"
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0"
   }
 }
