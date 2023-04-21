@@ -1,6 +1,6 @@
 import Head from "next/head";
 import NavBar from "../navbar";
-import { Box, Container } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import Footer from "../footer";
 import dynamic from "next/dynamic";
 import ModelLoader from "../model-loader";
@@ -12,7 +12,7 @@ const LazyModelLoader = dynamic(() => import("../model"), {
 
 const Home = ({ children, router }) => {
   return (
-    <Box as="main" pb={8}>
+    <Box as="main">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
@@ -29,11 +29,11 @@ const Home = ({ children, router }) => {
         <title>Manpreet Bhatti | Home</title>
       </Head>
       <NavBar path={router.asPath} />
-      <Container maxW="container.md" pt={14}>
+      <Flex flexDirection="column" minHeight="100vh" alignItems="center">
         <LazyModelLoader />
         {children}
         <Footer />
-      </Container>
+      </Flex>
     </Box>
   );
 };
