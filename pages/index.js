@@ -34,7 +34,7 @@ const Home = () => (
         bg={useColorModeValue("#f4f4f4", "whiteAlpha.200")}
         css={{ backdropFilter: "blur(10px)" }}
       >
-        I&apos;m a front end (aspiring full stack) developer based in{" "}
+        I&apos;m a front-end (aspiring full stack) developer based in{" "}
         <span title="Canada" aria-label="Canada">
           🇨🇦
         </span>
@@ -80,16 +80,11 @@ const Home = () => (
           👨🏽‍💻 Who I am
         </Heading>
         <Paragraph>
-          I was formerly a front end developer at{" "}
-          <Link variant="red-link" href="https://criticalmass.com/" isExternal>
-            Critical Mass
+          I&aops;m currently a front-end engineer at{" "}
+          <Link variant="red-link" href="https://agentnoon.com/" isExternal>
+            Agentnoon
           </Link>
-          , where I built various features and components for Nissan and
-          Infiniti. Based in Ontario, I have a passion for all things front end
-          with a keen mind to create beautiful, intuitive, and performant user
-          experiences. However, I look to grow as a developer and transition
-          into a full stack environment. I am currently in search of full-time
-          opportunities in hopes of starting a new challenge.
+          , optimizing the Agentnoon site, building Noon AI, and leading product development for an S&P 500 forecast tool. Based in Ontario, I have a passion for all things front end with a keen mind to create beautiful, intuitive, and performant user experiences. However, I look to grow as a developer and transition into a full stack environment. <br />I am open to new opportunities so please don&apos;t hesitate to reach out!
         </Paragraph>
         <Box align="center" my={4}>
           <Button as={NextLink} href="/work" scroll={false} rightIcon={<ChevronRightIcon />} variant="red-button">
@@ -102,12 +97,8 @@ const Home = () => (
           🤝 Community involvement
         </Heading>
         <Paragraph>
-          Giving back to my community is a joy for me; I help develop for my
-          university&apos;s hackathon,{" "}
-          <Link variant="red-link" href="https://hackthevalley.io/" isExternal>
-            Hack The Valley
-          </Link>
-          , as well as teach and mentor aspiring developers.
+          Giving back to my community is a joy for me; I help develop for my university&apos;s hackathon,{" "}
+          <Link variant="red-link" href="https://hackthevalley.io/" isExternal>Hack The Valley</Link>, as well as teach and mentor aspiring developers.
         </Paragraph>
       </Section>
       <Section delay={0.3}>
@@ -115,10 +106,7 @@ const Home = () => (
           🍿 Off-hours
         </Heading>
         <Paragraph>
-          When I&apos;m not developing, one of my hobbies is watching movies and
-          TV shows. For exploration and critical analysis purposes, I like to
-          immerse myself in all types of genres. That being said, action,
-          mystery, and sci-fi are the go-to.
+          When I&apos;m not developing, one of my hobbies is watching movies and TV shows. For exploration and critical analysis purposes, I like to immerse myself in all types of genres. That being said, action, mystery, and sci-fi are the go-to.
         </Paragraph>
       </Section>
       <Section delay={0.3}>
@@ -174,16 +162,14 @@ const Home = () => (
             title="Graf-Gas"
             thumbnail={thumbGrafGas}
           >
-            A data analytical dashboard with a focus on fleet driver fuel
-            consumption and transportation efficiency
+            A data analytical dashboard with a focus on fleet driver fuel consumption and transportation efficiency
           </GridItem>
           <GridItem
             href="https://project-structure-readme.netlify.app/"
             title="Auto README Docs"
             thumbnail={thumbAutoReadmeDocs}
           >
-            A web application that helps automate the README creation of GitHub
-            repository file structures
+            A web application that helps automate the README creation of GitHub repository file structures
           </GridItem>
         </SimpleGrid>
         <Box align="center" my={4}>
