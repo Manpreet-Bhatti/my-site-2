@@ -20,15 +20,13 @@ const Logo = () => {
   const logoImg = `/images/MB-mono.svg`;
 
   return (
-    <Link href="/" scroll={false} legacyBehavior>
-      <a>
-        <LogoBox>
-          <Image src={logoImg} width={20} height={20} alt="logo" />
-          <Text fontFamily="'Poppins', sans-serif" fontWeight="bold" ml={1}>
-            Manpreet Bhatti
-          </Text>
-        </LogoBox>
-      </a>
+    <Link href="/" scroll={false}>
+      <LogoBox>
+        <Image src={logoImg} width={20} height={20} alt="logo" />
+        <Text fontFamily="'Poppins', sans-serif" fontWeight="bold" ml={1}>
+          Manpreet Bhatti
+        </Text>
+      </LogoBox>
     </Link>
   );
 };

@@ -1,3 +1,4 @@
+import { forwardRef } from "react"
 import Logo from "./logo";
 import Link from "next/link";
 import {
@@ -26,19 +27,20 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     theme.colors.darkText
   );
   return (
-    <Link href={href} passHref scroll={false}>
-      <L
-        p={2}
-        _hover={{
-          color: theme.colors.redLight,
-        }}
-        color={active ? theme.colors.redLight : inactiveColor}
-        target={target}
-        {...props}
-      >
-        {children}
-      </L>
-    </Link>
+    <L
+      p={2}
+      _hover={{
+        color: theme.colors.redLight,
+      }}
+      color={active ? theme.colors.redLight : inactiveColor}
+      target={target}
+      {...props}
+      as={Link}
+      scroll={false}
+      href={href}
+    >
+      {children}
+    </L>
   );
 };
 
@@ -48,6 +50,10 @@ const menuItems = [
   { name: "Projects", href: "/projects" },
   { name: "Source", href: "https://github.com/Manpreet-Bhatti/my-site-2" },
 ];
+
+const MenuLink = forwardRef((props, ref) => (
+  <L ref={ref} as={Link} {...props} />
+))
 
 const Navbar = (props) => {
   const { path } = props;
@@ -129,22 +135,22 @@ const Navbar = (props) => {
               >
                 {menuItems.map((item, i) => {
                   return (
-                    <Link href={item.href} passHref key={i}>
-                      <MenuItem
-                        as={L}
-                        _hover={{
-                          // eslint-disable-next-line react-hooks/rules-of-hooks
-                          bg: useColorModeValue(
-                            theme.colors.hoverLightRedButton,
-                            theme.colors.hoverDarkRedButton
-                          ),
-                          textDecoration: "none",
-                        }}
-                        isExternal={item.name === "Source"}
-                      >
-                        {item.name}
-                      </MenuItem>
-                    </Link>
+                    <MenuItem
+                      key={i}
+                      as={MenuLink}
+                      href={item.href}
+                      _hover={{
+                        // eslint-disable-next-line react-hooks/rules-of-hooks
+                        bg: useColorModeValue(
+                          theme.colors.hoverLightRedButton,
+                          theme.colors.hoverDarkRedButton
+                        ),
+                        textDecoration: "none",
+                      }}
+                      isExternal={item.name === "Source"}
+                    >
+                      {item.name}
+                    </MenuItem>
                   );
                 })}
               </MenuList>

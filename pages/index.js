@@ -9,7 +9,6 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  chakra,
   Text,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
@@ -23,10 +22,6 @@ import theme from "../lib/theme";
 
 import thumbGrafGas from "../public/images/projects/grafgas.jpg";
 import thumbAutoReadmeDocs from "../public/images/projects/autoreadmedocs.jpg";
-
-const ProfileImage = chakra(Image, {
-  shouldForwardProp: (prop) => ["width", "height", "src", "alt"].includes(prop),
-});
 
 const Home = () => (
   <Layout>
@@ -70,12 +65,12 @@ const Home = () => (
             borderRadius="full"
             overflow="hidden"
           >
-            <ProfileImage
+            <Image
               src="/images/manpreet-coding.png"
               alt="Profile image"
               borderRadius="full"
-              width="96"
-              height="96"
+              width={96}
+              height={96}
             />
           </Box>
         </Box>
@@ -97,11 +92,9 @@ const Home = () => (
           opportunities in hopes of starting a new challenge.
         </Paragraph>
         <Box align="center" my={4}>
-          <NextLink href="/work" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} variant="red-button">
-              My experience
-            </Button>
-          </NextLink>
+          <Button as={NextLink} href="/work" scroll={false} rightIcon={<ChevronRightIcon />} variant="red-button">
+            My experience
+          </Button>
         </Box>
       </Section>
       <Section delay={0.2}>
@@ -194,11 +187,9 @@ const Home = () => (
           </GridItem>
         </SimpleGrid>
         <Box align="center" my={4}>
-          <NextLink href="/posts" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} variant="red-button">
-              My projects
-            </Button>
-          </NextLink>
+          <Button as={NextLink} href="/projects" scroll={false} rightIcon={<ChevronRightIcon />} variant="red-button">
+            My projects
+          </Button>
         </Box>
       </Section>
     </Container>

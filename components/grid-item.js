@@ -23,22 +23,20 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 
 export const DynamicGridItem = ({ children, type, id, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
-    <NextLink href={`/${type}/${id}`} passHref scroll={false}>
-      <LinkBox cursor="pointer">
-        <Image
-          src={thumbnail}
-          alt={title}
-          className="grid-item-thumbnail"
-          placeholder="blur"
-        />
-        <LinkOverlay href={`/work/${id}`}>
-          <Text mt={2} fontSize={20}>
-            {title}
-          </Text>
-        </LinkOverlay>
-        <Text fontSize={14}>{children}</Text>
-      </LinkBox>
-    </NextLink>
+    <LinkBox as={NextLink} href={`/${type}/${id}`} scroll={false} cursor="pointer">
+      <Image
+        src={thumbnail}
+        alt={title}
+        className="grid-item-thumbnail"
+        placeholder="blur"
+      />
+      <LinkOverlay as="div" href={`/work/${id}`}>
+        <Text mt={2} fontSize={20}>
+          {title}
+        </Text>
+      </LinkOverlay>
+      <Text fontSize={14}>{children}</Text>
+    </LinkBox>
   </Box>
 );
 
