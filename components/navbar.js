@@ -139,6 +139,7 @@ const Navbar = (props) => {
                       key={i}
                       as={MenuLink}
                       href={item.href}
+                      background={"#1a1a1a"}
                       _hover={{
                         // eslint-disable-next-line react-hooks/rules-of-hooks
                         bg: useColorModeValue(
