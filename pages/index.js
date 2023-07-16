@@ -46,7 +46,7 @@ const Home = () => (
             Manpreet Bhatti
           </Heading>
           <Text color={theme.colors.redLight}>
-            Front-end Engineer @ Agentnoon
+            Software Developer @ Agentnoon
           </Text>
         </Box>
         <Box
@@ -80,11 +80,11 @@ const Home = () => (
           👨🏽‍💻 Who I am
         </Heading>
         <Paragraph>
-          I&aops;m currently a front-end engineer at{" "}
+          I&aops;m currently a software developer at{" "}
           <Link variant="red-link" href="https://agentnoon.com/" isExternal>
             Agentnoon
           </Link>
-          , optimizing the Agentnoon site, building Noon AI, and leading product development for an S&P 500 forecast tool. Based in Ontario, I have a passion for all things front end with a keen mind to create beautiful, intuitive, and performant user experiences. However, I look to grow as a developer and transition into a full stack environment. <br />I am open to new opportunities so please don&apos;t hesitate to reach out!
+          , optimizing the Agentnoon site, building Noon AI and Agentnoon, and leading product development for an S&P 500 benchmark tool. Based in Ontario, I have a passion for all things front end with a keen mind to create beautiful, intuitive, and performant user experiences. However, I look to grow as a developer and transition into a full stack environment. <br />I am open to new opportunities so please don&apos;t hesitate to reach out!
         </Paragraph>
         <Box align="center" my={4}>
           <Button as={NextLink} href="/work" scroll={false} rightIcon={<ChevronRightIcon />} variant="red-button">
@@ -97,7 +97,7 @@ const Home = () => (
           🤝 Community involvement
         </Heading>
         <Paragraph>
-          Giving back to my community is a joy for me; I help develop for my university&apos;s hackathon,{" "}
+          Giving back to my community is a joy for me; I help develop for my former university&apos;s hackathon,{" "}
           <Link variant="red-link" href="https://hackthevalley.io/" isExternal>Hack The Valley</Link>, as well as teach and mentor aspiring developers.
         </Paragraph>
       </Section>
