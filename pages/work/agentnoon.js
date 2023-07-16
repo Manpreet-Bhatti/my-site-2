@@ -5,12 +5,15 @@ import P from "../../components/paragraph";
 import theme from "../../lib/theme";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
-const Agentnoon = () => {
+const Agentnoon = () => (
     <Layout title="Agentnoon">
         <Container>
             <Title>
-                Agentnoon (Front-end Engineer) <Badge>Dec 2022 - Present</Badge>
+                Agentnoon (Software Developer) <Badge>Jan 2023 - Present</Badge>
             </Title>
+            <P>
+                A software company that provides real-time workforce planning for fast HR system integrations.
+            </P>
             <List ml={4} my={4}>
                 <ListItem>
                     <Meta>Website</Meta>
@@ -19,12 +22,9 @@ const Agentnoon = () => {
                     </Link>
                 </ListItem>
             </List>
+            <Text color={theme.colors.redLight}>S&P 500 Tool</Text>
             <P>
-                A software company that provides Real Time Work Force Planning for Fast HR System Integrations
-            </P>
-            <Text color={theme.colors.redLight}>Free S&P 500 Tool</Text>
-            <P>
-                Led the development of an S&P 500 forecast tool, allowing executives to view market data such as total revenue, cost of revenue, research and development expedenture, and more.
+                Supervised the creation of an S&P 500 benchmark tool that gave executives access to market information such total revenue, cost of revenue, R&D spending, selling and marketing expenses, and general and administrative costs.
             </P>
             <List ml={4} my={4}>
                 <ListItem>
@@ -40,12 +40,46 @@ const Agentnoon = () => {
                 </ListItem>
                 <ListItem>
                     <Meta>Stack</Meta>
-                    <span>Python</span>
+                    <span>Python, TypeScript, Vue, Nuxt</span>
+                </ListItem>
+            </List>
+            <Text color={theme.colors.redLight}>NoonAI</Text>
+            <P></P>
+            <List ml={4} my={4}>
+                <ListItem>
+                    <Meta>Website</Meta>
+                    <span>TBA</span>
+                </ListItem>
+                <ListItem>
+                    <Meta>Platform</Meta>
+                    <span>Web</span>
+                </ListItem>
+                <ListItem>
+                    <Meta>Stack</Meta>
+                    <span>JavaScript, Vue</span>
+                </ListItem>
+            </List>
+            <Text color={theme.colors.redLight}>Agentnoon.com</Text>
+            <P></P>
+            <List ml={4} my={4}>
+                <ListItem>
+                    <Meta>Website</Meta>
+                    <Link variant="red-link" href="https://agentnoon.com/">
+                        https://agentnoon.com/ <ExternalLinkIcon mx="2px" />
+                    </Link>
+                </ListItem>
+                <ListItem>
+                    <Meta>Platform</Meta>
+                    <span>Web</span>
+                </ListItem>
+                <ListItem>
+                    <Meta>Stack</Meta>
+                    <span>Framer, React, JavaScript</span>
                 </ListItem>
             </List>
         </Container>
     </Layout>
-};
+);
 
 export default Agentnoon;
 export { getServerSideProps } from "../../components/chakra";
