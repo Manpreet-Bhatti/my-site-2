@@ -40,7 +40,7 @@ const Agentnoon = () => (
                 </ListItem>
                 <ListItem>
                     <Meta>Stack</Meta>
-                    <span>Python, TypeScript, Vue, Nuxt</span>
+                    <span>Python, TypeScript, Vue, Nuxt.js</span>
                 </ListItem>
             </List>
             <Text color={theme.colors.redLight}>NoonAI</Text>

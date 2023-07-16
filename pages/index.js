@@ -80,7 +80,7 @@ const Home = () => (
           👨🏽‍💻 Who I am
         </Heading>
         <Paragraph>
-          I&aops;m currently a software developer at{" "}
+          I&#39;m currently a software developer at{" "}
           <Link variant="red-link" href="https://agentnoon.com/" isExternal>
             Agentnoon
           </Link>
