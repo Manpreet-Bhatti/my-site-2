@@ -10,7 +10,7 @@ import { DynamicGridItem } from "../components/grid-item";
 import Layout from "../components/layouts/single-column";
 import Section from "../components/section";
 
-import thumbAgentnoon from "../public/images/work/agentnoon.jpg";
+import thumbAgentnoon from "../public/images/work/agentnoon/agentnoon.jpg";
 import thumbCriticalMass from "../public/images/work/critical-mass.jpg";
 import thumbZonado from "../public/images/work/zonado.jpg";
 import thumbIvedha from "../public/images/work/ivedha.jpg";

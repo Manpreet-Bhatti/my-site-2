@@ -1,6 +1,6 @@
 import { Badge, Container, Text, List, ListItem, Link } from "@chakra-ui/react";
 import Layout from "../../components/layouts/single-column";
-import { Title, Meta } from "../../components/work";
+import { Title, Meta, WorkImage } from "../../components/work";
 import P from "../../components/paragraph";
 import theme from "../../lib/theme";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
@@ -22,7 +22,7 @@ const Agentnoon = () => (
                     </Link>
                 </ListItem>
             </List>
-            <Text color={theme.colors.redLight}>S&P 500 Tool</Text>
+            <Text color={theme.colors.redLight}>S&P 500 Spending Benchmark Tool</Text>
             <P>
                 Supervised the creation of an S&P 500 benchmark tool that gave executives access to market information such total revenue, cost of revenue, R&D spending, selling and marketing expenses, and general and administrative costs.
             </P>
@@ -77,6 +77,18 @@ const Agentnoon = () => (
                     <span>Framer, React, JavaScript</span>
                 </ListItem>
             </List>
+            <WorkImage
+                src="/images/work/agentnoon/agentnoon_benchmark_01.png"
+                alt="Agentnoon spending benchmark tool landing page"
+            />
+            <WorkImage
+                src="/images/work/agentnoon/agentnoon_benchmark_02.png"
+                alt="Agentnoon spending benchmark for the Software industry"
+            />
+            <WorkImage
+                src="/images/work/agentnoon/agentnoon_benchmark_03.png"
+                alt="Example org chart for the Software industry"
+            />
         </Container>
     </Layout>
 );
