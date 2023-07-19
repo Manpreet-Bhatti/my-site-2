@@ -24,15 +24,14 @@ const Agentnoon = () => (
             </List>
             <Text color={theme.colors.redLight}>S&P 500 Spending Benchmark Tool</Text>
             <P>
-                Supervised the creation of an S&P 500 benchmark tool that gave executives access to market information such total revenue, cost of revenue, R&D spending, selling and marketing expenses, and general and administrative costs.
+                Supervised the creation of an S&P 500 spending benchmark tool that gave executives access to market information on different industries such R&D OpEx by revenue, G&A OpEx by revenue, and S&M OpEx by revenue.
             </P>
             <List ml={4} my={4}>
                 <ListItem>
                     <Meta>Website</Meta>
-                    {/* <Link variant="red-link" href="https://www.cheapreats.com/">
-                        https://www.cheapreats.com/ <ExternalLinkIcon mx="2px" />
-                    </Link> */}
-                    <span>TBA</span>
+                    <Link variant="red-link" href="https://benchmark.agentnoon.com/">
+                        https://benchmark.agentnoon.com/ <ExternalLinkIcon mx="2px" />
+                    </Link>
                 </ListItem>
                 <ListItem>
                     <Meta>Platform</Meta>
