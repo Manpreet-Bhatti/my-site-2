@@ -36,8 +36,14 @@ const Work = () => (
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <DynamicGridItem type="work" id="agentnoon" title="Agentnoon" thumbnail={thumbAgentnoon}>
-            A software company that provides Real Time Work Force Planning for Fast HR System Integrations
+          <DynamicGridItem
+            type="work"
+            id="agentnoon"
+            title="Agentnoon"
+            thumbnail={thumbAgentnoon}
+          >
+            A software company that provides Real Time Work Force Planning for
+            Fast HR System Integrations
           </DynamicGridItem>
         </Section>
         <Section>
@@ -47,7 +53,8 @@ const Work = () => (
             title="Critical Mass"
             thumbnail={thumbCriticalMass}
           >
-            A full-service digital experience design agency with a relentless focus on the customer
+            A full-service digital experience design agency with a relentless
+            focus on the customer
           </DynamicGridItem>
         </Section>
         <Section delay={0.1}>
@@ -57,7 +64,8 @@ const Work = () => (
             title="Zonado"
             thumbnail={thumbZonado}
           >
-            A specialised marketplace for Canadian commercial real estate and business sales
+            A specialised marketplace for Canadian commercial real estate and
+            business sales
           </DynamicGridItem>
         </Section>
       </SimpleGrid>
@@ -74,7 +82,8 @@ const Work = () => (
               title="iVedha"
               thumbnail={thumbIvedha}
             >
-              A leading global cloud managed services provider for enterprises in Canada, USA, Mexico and across the world
+              A leading global cloud managed services provider for enterprises
+              in Canada, USA, Mexico and across the world
             </DynamicGridItem>
           </Section>
           <Section delay={0.3}>
@@ -84,7 +93,8 @@ const Work = () => (
               title="CheaprEats"
               thumbnail={thumbCheaprEats}
             >
-              A food pickup service that facilitates interactions between customers and vendors while targeting post-secondary students
+              A food pickup service that facilitates interactions between
+              customers and vendors while targeting post-secondary students
             </DynamicGridItem>
           </Section>
           <Section delay={0.3}>
@@ -94,7 +104,8 @@ const Work = () => (
               title="benchMarked Studios"
               thumbnail={thumbBenchMarkedStudios}
             >
-              A consulting agency that looks to solve problems with robust, tested, specifically engineered software
+              A consulting agency that looks to solve problems with robust,
+              tested, specifically engineered software
             </DynamicGridItem>
           </Section>
         </SimpleGrid>
