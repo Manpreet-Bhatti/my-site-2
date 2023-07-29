@@ -7,7 +7,7 @@ import { Meta, Title, WorkImage } from "../../components/work";
 const GrafGas = () => (
   <Layout title="Graf-Gas">
     <Container>
-      <Title>
+      <Title type="projects">
         Front End Lead <Badge>Oct 2021 - Present</Badge>
       </Title>
       <P>

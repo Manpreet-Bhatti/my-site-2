@@ -7,7 +7,7 @@ import { Meta, Title, WorkImage } from "../../components/work";
 const AutoReadmeDocs = () => (
   <Layout title="Auto README Docs">
     <Container>
-      <Title>
+      <Title type="projects">
         Co-Contributor <Badge>Jul - Sep 2020</Badge>
       </Title>
       <P>
