@@ -8,7 +8,7 @@ import theme from "../../lib/theme";
 const Ivedha = () => (
   <Layout title="iVedha">
     <Container>
-      <Title>
+      <Title type="work">
         iVedha (Junior Development Intern) <Badge>May - Sep 2021</Badge>
       </Title>
       <P>

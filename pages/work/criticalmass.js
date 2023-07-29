@@ -8,7 +8,7 @@ import theme from "../../lib/theme";
 const CriticalMass = () => (
   <Layout title="Critical Mass">
     <Container>
-      <Title>
+      <Title type="work">
         Critical Mass (Front End Development Intern){" "}
         <Badge>May - Aug 2022</Badge>
       </Title>

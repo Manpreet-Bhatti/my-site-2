@@ -8,7 +8,7 @@ import theme from "../../lib/theme";
 const BenchMarkedStudios = () => (
   <Layout title="benchMarked Studios">
     <Container>
-      <Title>
+      <Title type="work">
         benchMarked Studios (Full-stack Developer) <Badge>May - Oct 2019</Badge>
       </Title>
       <P>

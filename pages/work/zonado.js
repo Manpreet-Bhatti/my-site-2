@@ -7,7 +7,7 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 const Zonado = () => (
   <Layout title="Zonado">
     <Container>
-      <Title>
+      <Title type="work">
         Zonado (Software Development Intern) <Badge>Mar - May 2022</Badge>
       </Title>
       <P>
