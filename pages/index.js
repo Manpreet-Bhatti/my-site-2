@@ -20,8 +20,8 @@ import { IoLogoLinkedin, IoLogoGithub, IoMail } from "react-icons/io5";
 import Image from "next/image";
 import theme from "../lib/theme";
 
+import thumbMenstruationNation from "../public/images/projects/menstruation_nation/mnation_logo.png";
 import thumbGrafGas from "../public/images/projects/grafgas.jpg";
-import thumbAutoReadmeDocs from "../public/images/projects/autoreadmedocs.jpg";
 
 const Home = () => (
   <Layout>
@@ -84,10 +84,22 @@ const Home = () => (
           <Link variant="red-link" href="https://agentnoon.com/" isExternal>
             Agentnoon
           </Link>
-          , optimizing the Agentnoon site, building Noon AI and Agentnoon, and leading product development for an S&P 500 benchmark tool. Based in Ontario, I have a passion for all things front end with a keen mind to create beautiful, intuitive, and performant user experiences. However, I look to grow as a developer and transition into a full stack environment. <br />I am open to new opportunities so please don&apos;t hesitate to reach out!
+          , optimizing the Agentnoon site, building Noon AI and Agentnoon, and
+          leading product development for an S&P 500 benchmark tool. Based in
+          Ontario, I have a passion for all things front end with a keen mind to
+          create beautiful, intuitive, and performant user experiences. However,
+          I look to grow as a developer and transition into a full stack
+          environment. <br />I am open to new opportunities so please don&apos;t
+          hesitate to reach out!
         </Paragraph>
         <Box align="center" my={4}>
-          <Button as={NextLink} href="/work" scroll={false} rightIcon={<ChevronRightIcon />} variant="red-button">
+          <Button
+            as={NextLink}
+            href="/work"
+            scroll={false}
+            rightIcon={<ChevronRightIcon />}
+            variant="red-button"
+          >
             My experience
           </Button>
         </Box>
@@ -97,8 +109,12 @@ const Home = () => (
           🤝 Community involvement
         </Heading>
         <Paragraph>
-          Giving back to my community is a joy for me; I help develop for my former university&apos;s hackathon,{" "}
-          <Link variant="red-link" href="https://hackthevalley.io/" isExternal>Hack The Valley</Link>, as well as teach and mentor aspiring developers.
+          Giving back to my community is a joy for me; I help develop for my
+          former university&apos;s hackathon,{" "}
+          <Link variant="red-link" href="https://hackthevalley.io/" isExternal>
+            Hack The Valley
+          </Link>
+          , as well as teach and mentor aspiring developers.
         </Paragraph>
       </Section>
       <Section delay={0.3}>
@@ -106,7 +122,10 @@ const Home = () => (
           🍿 Off-hours
         </Heading>
         <Paragraph>
-          When I&apos;m not developing, one of my hobbies is watching movies and TV shows. For exploration and critical analysis purposes, I like to immerse myself in all types of genres. That being said, action, mystery, and sci-fi are the go-to.
+          When I&apos;m not developing, one of my hobbies is watching movies and
+          TV shows. For exploration and critical analysis purposes, I like to
+          immerse myself in all types of genres. That being said, action,
+          mystery, and sci-fi are the go-to.
         </Paragraph>
       </Section>
       <Section delay={0.3}>
@@ -158,22 +177,29 @@ const Home = () => (
       <Section delay={0.4}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
+            href="https://play.google.com/store/apps/details?id=com.tpp.theperiodpurse"
+            title="Menstruation Nation"
+            thumbnail={thumbMenstruationNation}
+          >
+            A free period tracker designed by youth for youth
+          </GridItem>
+          <GridItem
             href="https://www.grafgas.com/"
             title="Graf-Gas"
             thumbnail={thumbGrafGas}
           >
-            A data analytical dashboard with a focus on fleet driver fuel consumption and transportation efficiency
-          </GridItem>
-          <GridItem
-            href="https://project-structure-readme.netlify.app/"
-            title="Auto README Docs"
-            thumbnail={thumbAutoReadmeDocs}
-          >
-            A web application that helps automate the README creation of GitHub repository file structures
+            A data analytical dashboard with a focus on fleet driver fuel
+            consumption and transportation efficiency
           </GridItem>
         </SimpleGrid>
         <Box align="center" my={4}>
-          <Button as={NextLink} href="/projects" scroll={false} rightIcon={<ChevronRightIcon />} variant="red-button">
+          <Button
+            as={NextLink}
+            href="/projects"
+            scroll={false}
+            rightIcon={<ChevronRightIcon />}
+            variant="red-button"
+          >
             My projects
           </Button>
         </Box>

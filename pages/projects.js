@@ -3,6 +3,7 @@ import { DynamicGridItem } from "../components/grid-item";
 import Layout from "../components/layouts/single-column";
 import Section from "../components/section";
 
+import thumbMenstruationNation from "../public/images/projects/menstruation_nation/mnation_logo.png";
 import thumbGrafGas from "../public/images/projects/grafgas.jpg";
 import thumbAutoReadmeDocs from "../public/images/projects/autoreadmedocs.jpg";
 
@@ -13,6 +14,16 @@ const Projects = () => (
         Projects
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section>
+          <DynamicGridItem
+            type="projects"
+            id="menstruationnation"
+            title="Menstruation Nation"
+            thumbnail={thumbMenstruationNation}
+          >
+            A free period tracker designed by youth for youth
+          </DynamicGridItem>
+        </Section>
         <Section>
           <DynamicGridItem
             type="projects"
