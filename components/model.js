@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { loadComputerModel } from "../lib/computer-loader";
@@ -8,18 +8,37 @@ function easeOutCircle(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4));
 }
 
+const useWindowResize = (container, renderer) => {
+  const handleWindowResize = useCallback(() => {
+    if (container && renderer) {
+      renderer.setSize(container.clientWidth, container.clientHeight);
+    }
+  }, [container, renderer]);
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowResize, false);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize, false);
+    };
+  }, [handleWindowResize]);
+};
+
 const ComputerModel = () => {
   const refContainer = useRef();
   const [loading, setLoading] = useState(true);
   const refRenderer = useRef();
 
-  const handleWindowResize = useCallback(() => {
-    const { current: renderer } = refRenderer;
-    const { current: container } = refContainer;
-    if (container && renderer) {
-      renderer.setSize(container.clientWidth, container.clientHeight);
-    }
-  }, []);
+  const target = useMemo(() => new THREE.Vector3(0, 0.25, 0), []);
+  const initialCameraPosition = useMemo(
+    () =>
+      new THREE.Vector3(
+        20 * Math.sin(0.2 * Math.PI),
+        10,
+        20 * Math.cos(0.2 * Math.PI)
+      ),
+    []
+  );
+  const ambientLight = useMemo(() => new THREE.AmbientLight(0xcccccc, 1), []);
 
   useEffect(() => {
     const { current: container } = refContainer;
@@ -30,16 +49,9 @@ const ComputerModel = () => {
       });
       renderer.setPixelRatio(window.devicePixelRatio);
       renderer.setSize(container.clientWidth, container.clientHeight);
-      renderer.outputEncoding = THREE.sRGBEncoding;
       container.appendChild(renderer.domElement);
       refRenderer.current = renderer;
       const scene = new THREE.Scene();
-      const target = new THREE.Vector3(0, 0.25, 0);
-      const initialCameraPosition = new THREE.Vector3(
-        20 * Math.sin(0.2 * Math.PI),
-        10,
-        20 * Math.cos(0.2 * Math.PI)
-      );
       const zoom = container.clientHeight * 0.005 + 0.5;
       const camera = new THREE.OrthographicCamera(
         -zoom,
@@ -51,7 +63,6 @@ const ComputerModel = () => {
       );
       camera.position.copy(initialCameraPosition);
       camera.lookAt(target);
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 1);
       scene.add(ambientLight);
       const controls = new OrbitControls(camera, renderer.domElement);
       controls.autoRotate = true;
@@ -87,14 +98,11 @@ const ComputerModel = () => {
         renderer.dispose();
       };
     }
-  }, []);
+  }, [target, initialCameraPosition, ambientLight]);
 
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowResize, false);
-    return () => {
-      window.removeEventListener("resize", handleWindowResize, false);
-    };
-  }, [handleWindowResize]);
+  const { current: container } = refContainer;
+  const { current: renderer } = refRenderer;
+  useWindowResize(container, renderer);
 
   return (
     <ModelContainer ref={refContainer}>
