@@ -42,16 +42,16 @@ const ComputerModel = () => {
       refRenderer.current = renderer;
       const scene = new THREE.Scene();
 
-      const target = new THREE.Vector3(0, 0.45, 0);
+      const isMobile = window.innerWidth < 768;
+
+      const target = new THREE.Vector3(0, isMobile ? 0.85 : 0.45, 0);
       const initialCameraPosition = new THREE.Vector3(
         20 * Math.sin(0.2 * Math.PI),
         10,
         20 * Math.cos(0.2 * Math.PI)
       );
 
-      // 640 -> 240
-      // 8   -> 6
-      const scale = scH * 0.005 + 0.8;
+      const scale = isMobile ? scH * 0.007 + 0.5 : scH * 0.005 + 0.8;
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
