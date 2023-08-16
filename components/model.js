@@ -12,6 +12,10 @@ const ComputerModel = () => {
   const refContainer = useRef();
   const [loading, setLoading] = useState(true);
   const refRenderer = useRef();
+  const urlComputerGLB =
+    process.env.NODE_ENV === "production"
+      ? "https://dl.dropboxusercontent.com/scl/fi/syta3x7ei80xclue5cpyw/computer.glb?rlkey=r6dtwuld3kp4fce736kw6se3n&dl=1"
+      : "/computer.glb";
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer;
@@ -70,13 +74,17 @@ const ComputerModel = () => {
       controls.autoRotate = true;
       controls.target = target;
 
-      loadComputerModel(scene, "/computer.glb", {
+      loadComputerModel(scene, urlComputerGLB, {
         receiveShadow: false,
         castShadow: false,
-      }).then(() => {
-        animate();
-        setLoading(false);
-      });
+      })
+        .then(() => {
+          animate();
+          setLoading(false);
+        })
+        .catch((error) => {
+          console.error("An error occurred while loading the model:", error);
+        });
 
       let req = null;
       let frame = 0;
@@ -108,7 +116,7 @@ const ComputerModel = () => {
         renderer.dispose();
       };
     }
-  }, []);
+  });
 
   useEffect(() => {
     window.addEventListener("resize", handleWindowResize, false);
