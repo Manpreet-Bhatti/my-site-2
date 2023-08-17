@@ -2,13 +2,13 @@ import Head from "next/head";
 import NavBar from "../navbar";
 import { Box, Flex } from "@chakra-ui/react";
 import Footer from "../footer";
-import dynamic from "next/dynamic";
-import ModelLoader from "../model-loader";
+// import dynamic from "next/dynamic";
+// import ModelLoader from "../model-loader";
 
-const LazyModelLoader = dynamic(() => import("../model"), {
-  ssr: false,
-  loading: () => <ModelLoader />,
-});
+// const LazyModelLoader = dynamic(() => import("../model"), {
+//   ssr: false,
+//   loading: () => <ModelLoader />,
+// });
 
 const Home = ({ children, router }) => {
   return (
@@ -30,7 +30,7 @@ const Home = ({ children, router }) => {
       </Head>
       <NavBar path={router.asPath} />
       <Flex flexDirection="column" minHeight="100vh" alignItems="center">
-        <LazyModelLoader />
+        {/* <LazyModelLoader /> */}
         {children}
         <Footer />
       </Flex>
