@@ -8,6 +8,16 @@ function easeOutCircle(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4));
 }
 
+function debounce(fn, delay) {
+  let timerId;
+  return (...args) => {
+    if (timerId) clearTimeout(timerId);
+    timerId = setTimeout(() => {
+      fn(...args);
+    }, delay);
+  };
+}
+
 const ComputerModel = () => {
   const refContainer = useRef();
   const [loading, setLoading] = useState(true);
@@ -27,6 +37,11 @@ const ComputerModel = () => {
       renderer.setSize(scW, scH);
     }
   }, []);
+
+  const debouncedHandleResize = useMemo(
+    () => debounce(handleWindowResize, 150),
+    [handleWindowResize]
+  );
 
   useEffect(() => {
     const { current: container } = refContainer;
@@ -74,13 +89,23 @@ const ComputerModel = () => {
       controls.autoRotate = true;
       controls.target = target;
 
-      loadComputerModel(scene, urlComputerGLB, {
-        receiveShadow: false,
-        castShadow: false,
-      })
+      const loadingManager = new THREE.LoadingManager();
+      loadingManager.onLoad = () => {
+        setLoading(false);
+      };
+
+      loadComputerModel(
+        scene,
+        urlComputerGLB,
+        {
+          receiveShadow: false,
+          castShadow: false,
+        },
+        loadingManager
+      )
         .then(() => {
-          animate();
           setLoading(false);
+          animate();
         })
         .catch((error) => {
           console.error("An error occurred while loading the model:", error);
@@ -119,11 +144,11 @@ const ComputerModel = () => {
   });
 
   useEffect(() => {
-    window.addEventListener("resize", handleWindowResize, false);
+    window.addEventListener("resize", debouncedHandleResize, false);
     return () => {
-      window.removeEventListener("resize", handleWindowResize, false);
+      window.removeEventListener("resize", debouncedHandleResize, false);
     };
-  }, [handleWindowResize]);
+  }, [debouncedHandleResize]);
 
   return (
     <ModelContainer ref={refContainer}>
