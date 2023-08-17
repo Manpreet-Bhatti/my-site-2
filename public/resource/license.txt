@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Computer with Devices
+* source:	https://sketchfab.com/3d-models/low-poly-computer-with-devices-721d8c3c3c9a493bb8f7da6d9ac197d1
+* author:	vadzaecc (https://sketchfab.com/vadzaecc)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Computer with Devices" (https://sketchfab.com/3d-models/low-poly-computer-with-devices-721d8c3c3c9a493bb8f7da6d9ac197d1) by vadzaecc (https://sketchfab.com/vadzaecc) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

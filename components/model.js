@@ -22,10 +22,7 @@ const ComputerModel = () => {
   const refContainer = useRef();
   const [loading, setLoading] = useState(true);
   const refRenderer = useRef();
-  const urlComputerGLB =
-    process.env.NODE_ENV === "production"
-      ? "https://dl.dropboxusercontent.com/scl/fi/syta3x7ei80xclue5cpyw/computer.glb?rlkey=r6dtwuld3kp4fce736kw6se3n&dl=1"
-      : "/computer.glb";
+  const urlComputerGLB = "/resource/computer.gltf";
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer;
