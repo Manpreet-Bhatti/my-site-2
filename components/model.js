@@ -47,7 +47,7 @@ const ComputerModel = () => {
       const scH = container.clientHeight;
 
       const renderer = new THREE.WebGLRenderer({
-        antialias: true,
+        antialias: false,
         alpha: true,
       });
       renderer.setPixelRatio(window.devicePixelRatio);
