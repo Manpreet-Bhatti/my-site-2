@@ -1,6 +1,6 @@
 {
   "name": "my-site-2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Personal website of Manpreet Bhatti, a Software Developer at Agentnoon. If you'd like to see what I have to showcase, visit https://github.com/Manpreet-Bhatti",
   "private": false,
   "scripts": {
@@ -23,6 +23,8 @@
     "@chakra-ui/react": "^2.3.2",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
+    "@react-three/drei": "^9.80.3",
+    "@react-three/fiber": "^8.13.7",
     "framer-motion": "^10.2.0",
     "next": "^13.2.0",
     "react": "18.2.0",
