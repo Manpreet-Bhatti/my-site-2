@@ -1,4 +1,4 @@
-import { forwardRef } from "react"
+import { forwardRef } from "react";
 import Logo from "./logo";
 import Link from "next/link";
 import {
@@ -52,8 +52,20 @@ const menuItems = [
 ];
 
 const MenuLink = forwardRef((props, ref) => (
-  <L ref={ref} as={Link} {...props} />
-))
+  <L
+    ref={ref}
+    as={Link}
+    {...props}
+    background={useColorModeValue("#ffffff", "#1a1a1a")}
+    _hover={{
+      bg: useColorModeValue(
+        theme.colors.hoverLightRedButton,
+        theme.colors.hoverDarkRedButton
+      ),
+      textDecoration: "none",
+    }}
+  />
+));
 
 const Navbar = (props) => {
   const { path } = props;
@@ -139,15 +151,6 @@ const Navbar = (props) => {
                       key={i}
                       as={MenuLink}
                       href={item.href}
-                      background={"#1a1a1a"}
-                      _hover={{
-                        // eslint-disable-next-line react-hooks/rules-of-hooks
-                        bg: useColorModeValue(
-                          theme.colors.hoverLightRedButton,
-                          theme.colors.hoverDarkRedButton
-                        ),
-                        textDecoration: "none",
-                      }}
                       isExternal={item.name === "Source"}
                     >
                       {item.name}
