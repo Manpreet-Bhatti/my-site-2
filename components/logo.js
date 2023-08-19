@@ -22,7 +22,13 @@ const Logo = () => {
   return (
     <Link href="/" scroll={false}>
       <LogoBox>
-        <Image src={logoImg} width={20} height={20} alt="logo" />
+        <Image
+          src={logoImg}
+          width={20}
+          height={20}
+          alt="logo"
+          priority={true}
+        />
         <Text fontFamily="'Poppins', sans-serif" fontWeight="bold" ml={1}>
           Manpreet Bhatti
         </Text>

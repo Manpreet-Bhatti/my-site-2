@@ -71,6 +71,7 @@ const Home = () => (
               borderRadius="full"
               width={96}
               height={96}
+              priority={true}
             />
           </Box>
         </Box>
