@@ -2,7 +2,7 @@ import Head from "next/head";
 import NavBar from "../navbar";
 import { Box, Flex } from "@chakra-ui/react";
 import Footer from "../footer";
-import ComputerModel from "../model";
+import Developer from "../developer";
 
 const Home = ({ children, router }) => {
   return (
@@ -24,7 +24,7 @@ const Home = ({ children, router }) => {
       </Head>
       <NavBar path={router.asPath} />
       <Flex flexDirection="column" minHeight="100vh" alignItems="center">
-        <ComputerModel />
+        <Developer />
         {children}
         <Footer />
       </Flex>
