@@ -56,19 +56,18 @@ const MenuLink = forwardRef((props, ref) => (
     ref={ref}
     as={Link}
     {...props}
-    background={useColorModeValue("#ffffff", "#1a1a1a")}
     _hover={{
       bg: useColorModeValue(
         theme.colors.hoverLightRedButton,
         theme.colors.hoverDarkRedButton
       ),
-      textDecoration: "none",
     }}
   />
 ));
 
 const Navbar = (props) => {
   const { path } = props;
+  const modeColor = useColorModeValue("#ffffff", "#1a1a1a");
 
   return (
     <Box
@@ -152,6 +151,10 @@ const Navbar = (props) => {
                       as={MenuLink}
                       href={item.href}
                       isExternal={item.name === "Source"}
+                      bg={modeColor}
+                      _hover={{
+                        outline: "none",
+                      }}
                     >
                       {item.name}
                     </MenuItem>
