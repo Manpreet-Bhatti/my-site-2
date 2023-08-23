@@ -19,16 +19,14 @@ const Layout = ({ children, title }) => {
       transition={{ duration: 0.4, type: "easeInOut" }}
       style={{ position: "relative" }}
     >
-      <>
-        {title && (
-          <Head>
-            <title>{t}</title>
-            <meta property="og:title" content={t} />
-          </Head>
-        )}
-        {children}
-        <GridItemStyle />
-      </>
+      {title && (
+        <Head>
+          <title>{t}</title>
+          <meta property="og:title" content={t} />
+        </Head>
+      )}
+      {children}
+      <GridItemStyle />
     </motion.article>
   );
 };
