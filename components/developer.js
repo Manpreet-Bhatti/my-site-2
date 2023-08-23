@@ -6,13 +6,7 @@ const Developer = () => {
 
   return (
     <Box mt={14} mb={-7}>
-      <Image
-        src={developerGif}
-        alt="developer"
-        width={280}
-        height={280}
-        priority={true}
-      />
+      <Image src={developerGif} alt="developer" width={280} height={280} />
     </Box>
   );
 };
