@@ -26,20 +26,6 @@ import thumbGrafGas from "../public/images/projects/grafgas.jpg";
 const Home = () => (
   <Layout>
     <Container>
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue("#f4f4f4", "whiteAlpha.200")}
-        css={{ backdropFilter: "blur(10px)" }}
-      >
-        I&apos;m a front-end (aspiring full stack) developer based in{" "}
-        <span title="Canada" aria-label="Canada">
-          🇨🇦
-        </span>
-        !
-      </Box>
       <Box display={{ md: "flex" }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
@@ -76,6 +62,20 @@ const Home = () => (
           </Box>
         </Box>
       </Box>
+      <Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="center"
+        bg={useColorModeValue("#f4f4f4", "whiteAlpha.200")}
+        css={{ backdropFilter: "blur(10px)" }}
+      >
+        I&apos;m a front-end (aspiring full-stack) developer based in{" "}
+        <span title="Canada" aria-label="Canada">
+          🇨🇦
+        </span>
+        !
+      </Box>
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           👨🏽‍💻 Who I am
@@ -89,7 +89,7 @@ const Home = () => (
           leading product development for an S&P 500 benchmark tool. Based in
           Ontario, I have a passion for all things front end with a keen mind to
           create beautiful, intuitive, and performant user experiences. However,
-          I look to grow as a developer and transition into a full stack
+          I look to grow as a developer and transition into a full-stack
           environment. <br />I am open to new opportunities so please don&apos;t
           hesitate to reach out!
         </Paragraph>
