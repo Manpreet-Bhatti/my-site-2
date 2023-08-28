@@ -2,7 +2,6 @@ import Head from "next/head";
 import NavBar from "../navbar";
 import { Box, Flex } from "@chakra-ui/react";
 import Footer from "../footer";
-import Developer from "../developer";
 
 const Home = ({ children, router }) => {
   return (
@@ -11,7 +10,7 @@ const Home = ({ children, router }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="All about Manpreet Bhatti; I'm a front end (aspiring full stack) developer based in Canada! Get to know me as I showcase my projects, skills, and more!"
+          content="All about Manpreet Bhatti; I'm a front end (aspiring full-stack) developer based in Canada! Get to know me as I showcase my projects, skills, and more!"
         />
         <meta name="author" content="Manpreet Bhatti" />
         <link rel="apple-touch-icon" href="MB-mono.svg" />
@@ -23,8 +22,12 @@ const Home = ({ children, router }) => {
         <title>Manpreet Bhatti | Home</title>
       </Head>
       <NavBar path={router.asPath} />
-      <Flex flexDirection="column" minHeight="100vh" alignItems="center">
-        <Developer />
+      <Flex
+        flexDirection="column"
+        minHeight="100vh"
+        alignItems="center"
+        pt={14}
+      >
         {children}
         <Footer />
       </Flex>
