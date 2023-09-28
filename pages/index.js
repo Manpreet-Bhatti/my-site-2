@@ -85,8 +85,7 @@ const Home = () => (
           <Link variant="red-link" href="https://agentnoon.com/" isExternal>
             Agentnoon
           </Link>
-          , optimizing the Agentnoon site, building Noon AI and Agentnoon, and
-          leading product development for an S&P 500 benchmark tool. Based in
+          , optimizing the Agentnoon site, and building Noon AI and Agentnoon. Based in
           Ontario, I have a passion for all things front end with a keen mind to
           create beautiful, intuitive, and performant user experiences. However,
           I look to grow as a developer and transition into a full-stack
