@@ -93,16 +93,19 @@ const Home = () => (
           👨🏽‍💻 Who I am
         </Heading>
         <Paragraph>
-          I&#39;m currently a software developer at{" "}
+          As a software developer at{" "}
           <Link variant="red-link" href="https://agentnoon.com/" isExternal>
             Agentnoon
           </Link>
-          , optimizing the Agentnoon site, and building Noon AI and Agentnoon.
-          Based in Ontario, I have a passion for all things front end with a
-          keen mind to create beautiful, intuitive, and performant user
-          experiences. However, I look to grow as a developer and transition
-          into a full-stack environment. <br />I am open to new opportunities so
-          please don&apos;t hesitate to reach out!
+          , I play a pivotal role in enhancing the website and Agentnoon
+          application. Based in Ontario, I specialize in front-end technologies,
+          crafting intuitive and high-performing user experiences. Eager to
+          expand my expertise, I&apos;m transitioning towards full-stack
+          development.
+        </Paragraph>
+        <Paragraph>
+          I&apos;m always open to exploring new opportunities, so feel free to
+          connect!
         </Paragraph>
         <Box align="center" my={4}>
           <Button
