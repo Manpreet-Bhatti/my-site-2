@@ -81,7 +81,7 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           👨🏽‍💻 Who I am
         </Heading>
-        <Text textAlign={"justify"} textIndent={"1em"}>
+        <Paragraph>
           I&#39;m currently a software developer at{" "}
           <Link variant="red-link" href="https://agentnoon.com/" isExternal>
             Agentnoon
@@ -92,7 +92,7 @@ const Home = () => (
           experiences. However, I look to grow as a developer and transition
           into a full-stack environment. <br />I am open to new opportunities so
           please don&apos;t hesitate to reach out!
-        </Text>
+        </Paragraph>
         <Box align="center" my={4}>
           <Button
             as={NextLink}
