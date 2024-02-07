@@ -88,7 +88,7 @@ const Home = () => (
         </span>
         !
       </Box>
-      <Section delay={0.3}>
+      <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           👨🏽‍💻 Who I am
         </Heading>
@@ -116,7 +116,7 @@ const Home = () => (
           </Button>
         </Box>
       </Section>
-      <Section delay={0.4}>
+      <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           🤝 Community involvement
         </Heading>
@@ -140,7 +140,7 @@ const Home = () => (
           mystery, and sci-fi are the go-to.
         </Paragraph>
       </Section>
-      <Section delay={0.4}>
+      <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           🕸 On the web
         </Heading>
@@ -186,7 +186,7 @@ const Home = () => (
           </ListItem>
         </List>
       </Section>
-      <Section delay={0.5}>
+      <Section delay={0.4}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://play.google.com/store/apps/details?id=com.tpp.theperiodpurse"
