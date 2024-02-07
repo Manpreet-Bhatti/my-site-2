@@ -24,7 +24,6 @@ import dynamic from "next/dynamic";
 import thumbMenstruationNation from "../public/images/projects/menstruation_nation/mnation_logo.png";
 import thumbGrafGas from "../public/images/projects/grafgas.jpg";
 
-// Dynamically import the Chakra Link component
 const Link = dynamic(
   () => import("@chakra-ui/next-js").then((mod) => mod.Link),
   {
@@ -32,7 +31,6 @@ const Link = dynamic(
   }
 );
 
-// Dynamic imports for heavy components, icons, or libraries
 const Image = dynamic(() => import("next/image"), {
   loading: () => <p>Loading...</p>,
   ssr: false,
