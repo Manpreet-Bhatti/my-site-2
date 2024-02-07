@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "prettier": "prettier --write .",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "cross-env ANALYZE=true next build"
   },
   "keywords": [],
   "author": "Manpreet Bhatti",
@@ -24,6 +25,8 @@
     "@chakra-ui/react": "^2.8.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@next/bundle-analyzer": "^14.1.0",
+    "cross-env": "^7.0.3",
     "framer-motion": "^10.16.1",
     "next": "^13.2.0",
     "react": "18.2.0",
