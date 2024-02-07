@@ -13,12 +13,16 @@ const Home = ({ children, router }) => {
           content="All about Manpreet Bhatti; I'm a front end (aspiring full-stack) developer based in Canada! Get to know me as I showcase my projects, skills, and more!"
         />
         <meta name="author" content="Manpreet Bhatti" />
-        <link rel="apple-touch-icon" href="MB-mono.svg" />
+        <link rel="apple-touch-icon" href="/images/MB-mono.svg" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta property="og:site_name" content="Manpreet Bhatti" />
         <meta name="og:title" content="Manpreet Bhatti" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="MB-mono.svg" />
+        <meta
+          property="og:image"
+          content="https://www.manpreetbhatti.com/images/MB-mono.svg"
+        />
+        <meta property="og:url" content="https://www.manpreetbhatti.com/" />
         <title>Manpreet Bhatti | Home</title>
       </Head>
       <NavBar path={router.asPath} />
