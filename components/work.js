@@ -1,10 +1,10 @@
-import NextLink from "next/link";
-import { Heading, Box, Image, Link, Badge } from "@chakra-ui/react";
+import { Heading, Box, Image, Badge } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/next-js";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
 export const Title = ({ type, children }) => (
   <Box>
-    <Link as={NextLink} href={`/${type}`}>
+    <Link href={`/${type}`}>
       {type.charAt(0).toUpperCase() + type.slice(1)}
     </Link>
     <span>

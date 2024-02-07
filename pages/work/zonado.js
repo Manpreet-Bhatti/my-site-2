@@ -1,4 +1,5 @@
-import { Badge, Container, Link, List, ListItem } from "@chakra-ui/react";
+import { Badge, Container, List, ListItem } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/next-js";
 import Layout from "../../components/layouts/single-column";
 import { Meta, Title, WorkImage } from "../../components/work";
 import P from "../../components/paragraph";

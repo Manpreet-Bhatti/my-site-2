@@ -1,6 +1,7 @@
+"use client";
+
 import NextLink from "next/link";
 import {
-  Link,
   Container,
   Heading,
   Box,
@@ -11,6 +12,7 @@ import {
   useColorModeValue,
   Text,
 } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/next-js";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Paragraph from "../components/paragraph";
 import Layout from "../components/layouts/single-column";
@@ -54,7 +56,6 @@ const Home = () => (
             <Image
               src="/images/manpreet-coding.png"
               alt="Profile image"
-              borderRadius="full"
               width={96}
               height={96}
               priority={true}
@@ -85,12 +86,12 @@ const Home = () => (
           <Link variant="red-link" href="https://agentnoon.com/" isExternal>
             Agentnoon
           </Link>
-          , optimizing the Agentnoon site, and building Noon AI and Agentnoon. Based in
-          Ontario, I have a passion for all things front end with a keen mind to
-          create beautiful, intuitive, and performant user experiences. However,
-          I look to grow as a developer and transition into a full-stack
-          environment. <br />I am open to new opportunities so please don&apos;t
-          hesitate to reach out!
+          , optimizing the Agentnoon site, and building Noon AI and Agentnoon.
+          Based in Ontario, I have a passion for all things front end with a
+          keen mind to create beautiful, intuitive, and performant user
+          experiences. However, I look to grow as a developer and transition
+          into a full-stack environment. <br />I am open to new opportunities so
+          please don&apos;t hesitate to reach out!
         </Paragraph>
         <Box align="center" my={4}>
           <Button

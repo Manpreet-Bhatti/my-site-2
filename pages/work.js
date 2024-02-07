@@ -3,9 +3,9 @@ import {
   Divider,
   Heading,
   SimpleGrid,
-  Link,
   Text,
 } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/next-js";
 import { DynamicGridItem } from "../components/grid-item";
 import Layout from "../components/layouts/single-column";
 import Section from "../components/section";

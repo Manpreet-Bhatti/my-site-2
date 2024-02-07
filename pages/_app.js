@@ -1,5 +1,5 @@
 import Layout from "../components/layouts/home";
-import Fonts from "../components/fonts";
+import { fonts } from "../lib/fonts";
 import { AnimatePresence } from "framer-motion";
 import Chakra from "../components/chakra";
 
@@ -9,22 +9,30 @@ if (typeof window !== "undefined") {
 
 function Website({ Component, pageProps, router }) {
   return (
-    <Chakra cookies={pageProps.cookies}>
-      <Fonts />
-      <Layout router={router}>
-        <AnimatePresence
-          mode="wait"
-          initial={true}
-          onExitComplete={() => {
-            if (typeof window !== "undefined") {
-              window.scrollTo({ top: 0 });
-            }
-          }}
-        >
-          <Component {...pageProps} key={router.route} />
-        </AnimatePresence>
-      </Layout>
-    </Chakra>
+    <>
+      <style jsx global>
+        {`
+          :root {
+            --font-poppins: ${fonts.poppins.style.fontFamily};
+          }
+        `}
+      </style>
+      <Chakra cookies={pageProps.cookies}>
+        <Layout router={router}>
+          <AnimatePresence
+            mode="wait"
+            initial={true}
+            onExitComplete={() => {
+              if (typeof window !== "undefined") {
+                window.scrollTo({ top: 0 });
+              }
+            }}
+          >
+            <Component {...pageProps} key={router.route} />
+          </AnimatePresence>
+        </Layout>
+      </Chakra>
+    </>
   );
 }
 
