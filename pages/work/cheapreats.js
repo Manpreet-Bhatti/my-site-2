@@ -1,3 +1,5 @@
+"use client";
+
 import { Badge, Container, List, ListItem, Text } from "@chakra-ui/react";
 import { Link } from "@chakra-ui/next-js";
 import Layout from "../../components/layouts/single-column";

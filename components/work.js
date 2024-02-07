@@ -1,3 +1,5 @@
+"use client";
+
 import { Heading, Box, Image, Badge } from "@chakra-ui/react";
 import { Link } from "@chakra-ui/next-js";
 import { ChevronRightIcon } from "@chakra-ui/icons";

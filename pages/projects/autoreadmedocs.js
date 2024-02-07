@@ -1,3 +1,5 @@
+"use client";
+
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Badge, Container, List, ListItem } from "@chakra-ui/react";
 import { Link } from "@chakra-ui/next-js";

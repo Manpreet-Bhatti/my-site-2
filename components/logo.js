@@ -1,3 +1,5 @@
+"use client";
+
 import { Link } from "@chakra-ui/next-js";
 import Image from "next/image";
 import { Text } from "@chakra-ui/react";
