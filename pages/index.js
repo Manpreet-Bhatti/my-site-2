@@ -97,8 +97,8 @@ const Home = () => (
           <Link variant="red-link" href="https://agentnoon.com/" isExternal>
             Agentnoon
           </Link>
-          , I play on enhancing the website and Agentnoon application. Hailing
-          from Ontario, I specialize in front-end technologies, crafting
+          , I play a pivotal role in enhancing Agentnoon&apos;s applications.
+          Hailing from Ontario, I specialize in front-end technologies, crafting
           intuitive and high-performing user experiences. I&apos;m always open
           to exploring new opportunities, so feel free to connect!
         </Paragraph>
