@@ -23,6 +23,26 @@ const Home = ({ children, router }) => {
           content="https://www.manpreetbhatti.com/images/MB-mono.svg"
         />
         <meta property="og:url" content="https://www.manpreetbhatti.com/" />
+        <meta
+          property="og:description"
+          content="All about Manpreet Bhatti; I'm a front end (aspiring full-stack) developer based in Canada! Get to know me as I showcase my projects, skills, and more!"
+        />
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="manpreetbhatti.com" />
+        <meta
+          property="twitter:url"
+          content="https://www.manpreetbhatti.com/"
+        />
+        <meta name="twitter:title" content="Manpreet Bhatti" />
+        <meta
+          name="twitter:description"
+          content="All about Manpreet Bhatti; I'm a front end (aspiring full-stack) developer based in Canada! Get to know me as I showcase my projects, skills, and more!"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.manpreetbhatti.com/images/MB-mono.svg"
+        />
         <title>Manpreet Bhatti | Home</title>
       </Head>
       <NavBar path={router.asPath} />
