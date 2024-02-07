@@ -12,18 +12,31 @@ import {
   useColorModeValue,
   Text,
 } from "@chakra-ui/react";
-import { Link } from "@chakra-ui/next-js";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Paragraph from "../components/paragraph";
 import Layout from "../components/layouts/single-column";
 import Section from "../components/section";
 import { GridItem } from "../components/grid-item";
 import { IoLogoLinkedin, IoLogoGithub, IoMail } from "react-icons/io5";
-import Image from "next/image";
 import theme from "../lib/theme";
+import dynamic from "next/dynamic";
 
 import thumbMenstruationNation from "../public/images/projects/menstruation_nation/mnation_logo.png";
 import thumbGrafGas from "../public/images/projects/grafgas.jpg";
+
+// Dynamically import the Chakra Link component
+const Link = dynamic(
+  () => import("@chakra-ui/next-js").then((mod) => mod.Link),
+  {
+    ssr: false,
+  }
+);
+
+// Dynamic imports for heavy components, icons, or libraries
+const Image = dynamic(() => import("next/image"), {
+  loading: () => <p>Loading...</p>,
+  ssr: false,
+});
 
 const Home = () => (
   <Layout>
