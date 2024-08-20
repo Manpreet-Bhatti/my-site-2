@@ -28,7 +28,7 @@ const Link = dynamic(
   () => import("@chakra-ui/next-js").then((mod) => mod.Link),
   {
     ssr: false,
-  }
+  },
 );
 
 const Image = dynamic(() => import("next/image"), {
@@ -45,7 +45,7 @@ const Home = () => (
             Manpreet Bhatti
           </Heading>
           <Text color={theme.colors.redLight}>
-            Software Developer @ Agentnoon
+            Product Engineer @ Agentnoon
           </Text>
         </Box>
         <Box
@@ -93,7 +93,7 @@ const Home = () => (
           👨🏽‍💻 Who I am
         </Heading>
         <Paragraph>
-          As a software developer at{" "}
+          As a product engineer at{" "}
           <Link variant="red-link" href="https://agentnoon.com/" isExternal>
             Agentnoon
           </Link>
