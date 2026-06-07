@@ -50,8 +50,8 @@ export const workEntries: WorkEntry[] = [
   {
     slug: "agentnoon",
     title: "Agentnoon",
-    role: "Software Developer",
-    period: "Jan 2023 - Present",
+    role: "Product Engineer",
+    period: "Dec 2022 - Oct 2025",
     thumbnail: thumbAgentnoon,
     tagline:
       "A software company that provides Real Time Work Force Planning for Fast HR System Integrations",
@@ -60,7 +60,11 @@ export const workEntries: WorkEntry[] = [
       "A software company that provides real-time workforce planning for fast HR system integrations.",
     ],
     companyMeta: [
-      { label: "Website", value: "https://agentnoon.com/", href: "https://agentnoon.com/" },
+      {
+        label: "Website",
+        value: "https://agentnoon.com/",
+        href: "https://agentnoon.com/",
+      },
     ],
     subProjects: [
       {
@@ -89,16 +93,29 @@ export const workEntries: WorkEntry[] = [
       {
         title: "Agentnoon.com",
         meta: [
-          { label: "Website", value: "https://agentnoon.com/", href: "https://agentnoon.com/" },
+          {
+            label: "Website",
+            value: "https://agentnoon.com/",
+            href: "https://agentnoon.com/",
+          },
           { label: "Platform", value: "Web" },
           { label: "Stack", value: "Framer, React, JavaScript" },
         ],
       },
     ],
     images: [
-      { src: agentnoonBenchmark01, alt: "Agentnoon spending benchmark tool landing page" },
-      { src: agentnoonBenchmark02, alt: "Agentnoon spending benchmark for the Software industry" },
-      { src: agentnoonBenchmark03, alt: "Example org chart for the Software industry" },
+      {
+        src: agentnoonBenchmark01,
+        alt: "Agentnoon spending benchmark tool landing page",
+      },
+      {
+        src: agentnoonBenchmark02,
+        alt: "Agentnoon spending benchmark for the Software industry",
+      },
+      {
+        src: agentnoonBenchmark03,
+        alt: "Example org chart for the Software industry",
+      },
     ],
   },
   {
@@ -169,7 +186,8 @@ export const workEntries: WorkEntry[] = [
     role: "Software Development Intern",
     period: "Mar - May 2022",
     thumbnail: thumbZonado,
-    tagline: "A specialised marketplace for Canadian commercial real estate and business sales",
+    tagline:
+      "A specialised marketplace for Canadian commercial real estate and business sales",
     isRecent: true,
     description: [
       "A specialised marketplace for Canadian commercial real estate and business sales.",
@@ -179,9 +197,16 @@ export const workEntries: WorkEntry[] = [
       "I also set up a resilient and reliable payment platform with incentives to increase sales by 2x, creating a subscription model users could follow to truly extract the most out of the application.",
     ],
     companyMeta: [
-      { label: "Website", value: "https://zonado.com/", href: "https://zonado.com/" },
+      {
+        label: "Website",
+        value: "https://zonado.com/",
+        href: "https://zonado.com/",
+      },
       { label: "Platform", value: "Web" },
-      { label: "Stack", value: "React, TypeScript, Next.js, Prisma, Chakra UI" },
+      {
+        label: "Stack",
+        value: "React, TypeScript, Next.js, Prisma, Chakra UI",
+      },
     ],
     subProjects: [],
     images: [
@@ -205,7 +230,11 @@ export const workEntries: WorkEntry[] = [
       "A leading global cloud managed services provider for enterprises in Canada, USA, Mexico and across the world.",
     ],
     companyMeta: [
-      { label: "Website", value: "https://ivedha.com/", href: "https://ivedha.com/" },
+      {
+        label: "Website",
+        value: "https://ivedha.com/",
+        href: "https://ivedha.com/",
+      },
     ],
     subProjects: [
       {
@@ -246,7 +275,11 @@ export const workEntries: WorkEntry[] = [
       "A food pickup service that facilitates interactions between customers and vendors while targeting post-secondary students.",
     ],
     companyMeta: [
-      { label: "Website", value: "https://www.cheapreats.com/", href: "https://www.cheapreats.com/" },
+      {
+        label: "Website",
+        value: "https://www.cheapreats.com/",
+        href: "https://www.cheapreats.com/",
+      },
     ],
     subProjects: [
       {
@@ -290,7 +323,10 @@ export const workEntries: WorkEntry[] = [
       { src: autoreadmedocs01, alt: "Auto README Docs front page" },
       { src: autoreadmedocs02, alt: "Auto README Docs badges" },
       { src: autoreadmedocs03, alt: "Auto README Docs markdown tree" },
-      { src: autoreadmedocs04, alt: "Auto README Docs markdown tree continued" },
+      {
+        src: autoreadmedocs04,
+        alt: "Auto README Docs markdown tree continued",
+      },
     ],
   },
   {
@@ -315,7 +351,11 @@ export const workEntries: WorkEntry[] = [
           "In addition, since the application was originally created as a web app, it was required to be converted into an iOS and Android application, which was processed with the help of Ionic's capacitor, led by me.",
         ],
         meta: [
-          { label: "Website", value: "https://sportclips.ca/", href: "https://sportclips.ca/" },
+          {
+            label: "Website",
+            value: "https://sportclips.ca/",
+            href: "https://sportclips.ca/",
+          },
           { label: "Platform", value: "iOS, Android" },
           { label: "Stack", value: "React, Gatsby, Ionic" },
         ],
