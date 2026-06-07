@@ -18,7 +18,7 @@ export const WorkImage = ({ src, alt }: { src: StaticImageData; alt: string }) =
 );
 
 export const Meta = ({ children }: { children: React.ReactNode }) => (
-  <span className="inline-block bg-accent text-white text-xs font-medium px-2 py-0.5 rounded mr-2">
+  <span className="inline-block bg-[#8b5a2b] text-white text-xs font-medium px-2 py-0.5 rounded mr-2">
     {children}
   </span>
 );

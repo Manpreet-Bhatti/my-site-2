@@ -32,7 +32,7 @@ export default async function ProjectPage({
       <div className="max-w-2xl w-full px-4 mx-auto">
         <Title type="projects">
           {project.role}{" "}
-          <span className="inline-block bg-accent text-white text-xs font-medium px-2 py-0.5 rounded ml-1">
+          <span className="inline-block bg-[#8b5a2b] text-white text-xs font-medium px-2 py-0.5 rounded ml-1">
             {project.period}
           </span>
         </Title>
