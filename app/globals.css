@@ -3,12 +3,12 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @theme {
-  --color-accent: #e8668a;
-  --color-accent-hover: #d4547a;
-  --color-accent-active: #c0446a;
-  --color-btn-hover-light: #fde8ed;
+  --color-accent: #b83c63;
+  --color-accent-hover: #a63659;
+  --color-accent-active: #973151;
+  --color-btn-hover-light: #f8ecef;
   --color-btn-hover-dark: #6b1f35;
-  --color-btn-active-light: #fbd0d9;
+  --color-btn-active-light: #f2dce3;
   --color-btn-active-dark: #581929;
 }
 
