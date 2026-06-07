@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -56,7 +55,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main className="flex flex-col min-h-screen items-center pt-14">
           {children}
-          <Footer />
+          <footer className="text-center opacity-40 text-sm mt-auto pt-8 pb-2">
+            Made with ❤️ by Manpreet Bhatti
+          </footer>
         </main>
       </body>
     </html>
