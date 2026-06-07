@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+  --color-accent: #d40000;
+  --color-accent-hover: #bd1d26;
+  --color-accent-active: #ad1b22;
+  --color-btn-hover-light: #fae8e9;
+  --color-btn-hover-dark: #7d1d22;
+  --color-btn-active-light: #f9d9db;
+  --color-btn-active-dark: #6a1a1e;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1a202c;
+  font-family: var(--font-poppins), sans-serif;
+  transition: background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="dark"] body {
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.922);
+}
+
+@utility red-link {
+  color: #d40000;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  background-position: 0% 100%;
+  text-underline-offset: 5px;
+  transition:
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #bd1d26;
+    background-size: 100% 2px;
+    text-decoration: none;
+  }
+  &:active {
+    color: #ad1b22;
+  }
+}
+
+@utility section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+@utility page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
