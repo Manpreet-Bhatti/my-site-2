@@ -20,7 +20,7 @@ export default function Home() {
         <div className="md:flex">
           <div className="grow">
             <h2 className="page-title">Manpreet Bhatti</h2>
-            <p className="text-accent">Product Engineer @ Agentnoon</p>
+            <p className="text-accent">Software Developer @ Dayforce</p>
           </div>
           <div className="shrink-0 mt-4 md:mt-0 md:ml-6 text-center">
             <div className="border-2 border-accent w-25 h-25 inline-block rounded-full overflow-hidden">
@@ -46,19 +46,19 @@ export default function Home() {
         <Section delay={0.1}>
           <h3 className="section-title">👨🏽‍💻 Who I am</h3>
           <p className="text-justify indent-4">
-            As a product engineer at{" "}
+            As a software developer at{" "}
             <a
               className="red-link"
-              href="https://agentnoon.com/"
+              href="https://www.dayforce.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Agentnoon
+              Dayforce
             </a>
-            , I play a pivotal role in enhancing Agentnoon&apos;s applications.
-            Hailing from Ontario, I specialize in front-end technologies,
-            crafting intuitive and high-performing user experiences. I&apos;m
-            always open to exploring new opportunities, so feel free to connect!
+            , I play a pivotal role in enhancing and building SWP. Hailing from
+            Ontario, I specialize in crafting intuitive and high-performing user
+            experiences. I&apos;m always open to exploring new opportunities, so
+            feel free to connect!
           </p>
           <div className="text-center my-4">
             <Link
