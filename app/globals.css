@@ -3,13 +3,13 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @theme {
-  --color-accent: #d40000;
-  --color-accent-hover: #bd1d26;
-  --color-accent-active: #ad1b22;
-  --color-btn-hover-light: #fae8e9;
-  --color-btn-hover-dark: #7d1d22;
-  --color-btn-active-light: #f9d9db;
-  --color-btn-active-dark: #6a1a1e;
+  --color-accent: #e8668a;
+  --color-accent-hover: #d4547a;
+  --color-accent-active: #c0446a;
+  --color-btn-hover-light: #fde8ed;
+  --color-btn-hover-dark: #6b1f35;
+  --color-btn-active-light: #fbd0d9;
+  --color-btn-active-dark: #581929;
 }
 
 body {
@@ -19,13 +19,19 @@ body {
   transition: background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+[data-theme="dark"] {
+  --color-accent: #ffb7c5;
+  --color-accent-hover: #ff96aa;
+  --color-accent-active: #ff7894;
+}
+
 [data-theme="dark"] body {
   background-color: #1a1a1a;
   color: rgba(255, 255, 255, 0.922);
 }
 
 @utility red-link {
-  color: #d40000;
+  color: var(--color-accent);
   background-image: linear-gradient(currentColor, currentColor);
   background-repeat: no-repeat;
   background-size: 0% 2px;
@@ -36,12 +42,12 @@ body {
     background-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: #bd1d26;
+    color: var(--color-accent-hover);
     background-size: 100% 2px;
     text-decoration: none;
   }
   &:active {
-    color: #ad1b22;
+    color: var(--color-accent-active);
   }
 }
 

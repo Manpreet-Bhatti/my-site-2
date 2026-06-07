@@ -5,6 +5,7 @@ import { Linkedin, Github, Mail } from "lucide-react";
 import Section from "@/components/section";
 import { GridItem } from "@/components/grid-item";
 import SingleColumn from "@/components/layouts/single-column";
+import SakuraViewer from "@/components/sakura-viewer";
 
 import thumbMenstruationNation from "@/public/images/projects/menstruation_nation/mnation_logo.png";
 import thumbGrafGas from "@/public/images/projects/grafgas.jpg";
@@ -12,6 +13,9 @@ import thumbGrafGas from "@/public/images/projects/grafgas.jpg";
 export default function Home() {
   return (
     <SingleColumn>
+      <div className="max-w-2xl w-full px-4 mx-auto">
+        <SakuraViewer />
+      </div>
       <div className="max-w-2xl w-full px-4 mx-auto">
         <div className="md:flex">
           <div className="flex-grow">
@@ -51,7 +55,7 @@ export default function Home() {
           <div className="text-center my-4">
             <Link
               href="/work"
-              className="inline-flex items-center gap-1 px-4 py-2 rounded-md bg-[rgba(143,143,143,0.1)] hover:bg-btn-hover-light dark:bg-accent dark:hover:bg-btn-hover-dark transition-colors"
+              className="inline-flex items-center gap-1 px-4 py-2 rounded-md bg-[#8b5a2b] hover:bg-[#7a4f26] text-white transition-colors"
             >
               My experience <ChevronRight size={16} />
             </Link>
@@ -135,7 +139,7 @@ export default function Home() {
           <div className="text-center my-4">
             <Link
               href="/projects"
-              className="inline-flex items-center gap-1 px-4 py-2 rounded-md bg-[rgba(143,143,143,0.1)] hover:bg-btn-hover-light dark:bg-accent dark:hover:bg-btn-hover-dark transition-colors"
+              className="inline-flex items-center gap-1 px-4 py-2 rounded-md bg-[#8b5a2b] hover:bg-[#7a4f26] text-white transition-colors"
             >
               My projects <ChevronRight size={16} />
             </Link>
