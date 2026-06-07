@@ -15,7 +15,7 @@
 body {
   background-color: #ffffff;
   color: #1a202c;
-  font-family: var(--font-poppins), sans-serif;
+  font-family: var(--font-m-plus-1p), sans-serif;
   transition: background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 

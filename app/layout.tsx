@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { M_PLUS_1p } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 
-const poppins = Poppins({
+const mPlus1p = M_PLUS_1p({
   subsets: ["latin"],
   weight: ["400", "700"],
-  variable: "--font-poppins",
+  variable: "--font-m-plus-1p",
   display: "swap",
 });
 
@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body className={`${poppins.variable}`}>
+      <body className={`${mPlus1p.variable}`}>
         <Navbar />
         <main className="flex flex-col min-h-screen items-center pt-14">
           {children}
