@@ -3,8 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { Github, Menu, X } from "lucide-react";
-import Logo from "./logo";
 import { ThemeToggleButton } from "./theme-toggle-button";
 import { cn } from "@/lib/utils";
 
@@ -47,7 +47,20 @@ const Navbar = () => {
       <div className="max-w-2xl mx-auto flex p-2 flex-wrap items-center justify-between">
         <div className="flex items-center mr-5">
           <h1 className="text-lg font-semibold tracking-tighter">
-            <Logo />
+            <Link
+              href="/"
+              className="inline-flex items-center h-[30px] px-[10px] font-bold text-[18px] no-underline text-inherit hover:text-inherit"
+            >
+              <Image
+                src="/images/MB-mono.svg"
+                width={20}
+                height={20}
+                alt="logo"
+                priority
+                className="transition-all duration-200"
+              />
+              <span className="font-bold ml-1">Manpreet Bhatti</span>
+            </Link>
           </h1>
         </div>
 

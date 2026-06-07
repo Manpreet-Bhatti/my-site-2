@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import { Linkedin, Github, Mail } from "lucide-react";
-import Paragraph from "@/components/paragraph";
 import Section from "@/components/section";
 import { GridItem } from "@/components/grid-item";
 import SingleColumn from "@/components/layouts/single-column";
@@ -39,7 +38,7 @@ export default function Home() {
 
         <Section delay={0.1}>
           <h3 className="section-title">👨🏽‍💻 Who I am</h3>
-          <Paragraph>
+          <p className="text-justify indent-4">
             As a product engineer at{" "}
             <a className="red-link" href="https://agentnoon.com/" target="_blank" rel="noopener noreferrer">
               Agentnoon
@@ -48,7 +47,7 @@ export default function Home() {
             Hailing from Ontario, I specialize in front-end technologies, crafting
             intuitive and high-performing user experiences. I&apos;m always open
             to exploring new opportunities, so feel free to connect!
-          </Paragraph>
+          </p>
           <div className="text-center my-4">
             <Link
               href="/work"
@@ -61,24 +60,24 @@ export default function Home() {
 
         <Section delay={0.2}>
           <h3 className="section-title">🤝 Community involvement</h3>
-          <Paragraph>
+          <p className="text-justify indent-4">
             Giving back to my community is a joy for me; I help develop for my
             former university&apos;s hackathon,{" "}
             <a className="red-link" href="https://hackthevalley.io/" target="_blank" rel="noopener noreferrer">
               Hack The Valley
             </a>
             , as well as teach and mentor aspiring developers.
-          </Paragraph>
+          </p>
         </Section>
 
         <Section delay={0.3}>
           <h3 className="section-title">🍿 Off-hours</h3>
-          <Paragraph>
+          <p className="text-justify indent-4">
             When I&apos;m not developing, one of my hobbies is watching movies and
             TV shows. For exploration and critical analysis purposes, I like to
             immerse myself in all types of genres. That being said, action,
             mystery, and sci-fi are the go-to.
-          </Paragraph>
+          </p>
         </Section>
 
         <Section delay={0.3}>

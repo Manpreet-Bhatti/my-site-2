@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import SingleColumn from "@/components/layouts/single-column";
-import Paragraph from "@/components/paragraph";
 import { MetaList, Title, WorkImage } from "@/components/work";
 import { projects } from "@/content/projects";
 
@@ -38,7 +37,7 @@ export default async function ProjectPage({
           </span>
         </Title>
         {project.paragraphs.map((p, i) => (
-          <Paragraph key={i}>{p}</Paragraph>
+          <p key={i} className="text-justify indent-4">{p}</p>
         ))}
         <MetaList items={project.meta} />
         {project.images.map((img, i) => (
