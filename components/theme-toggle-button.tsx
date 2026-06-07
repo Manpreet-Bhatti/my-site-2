@@ -15,7 +15,10 @@ export const ThemeToggleButton = () => {
 
   const toggle = () => {
     const next = !isDark;
-    document.documentElement.setAttribute("data-theme", next ? "dark" : "light");
+    document.documentElement.setAttribute(
+      "data-theme",
+      next ? "dark" : "light",
+    );
     localStorage.setItem("theme", next ? "dark" : "light");
     setIsDark(next);
   };
@@ -24,7 +27,7 @@ export const ThemeToggleButton = () => {
     <div
       onClick={toggle}
       data-ison={isDark ? "dark" : "light"}
-      className="w-[60px] h-[30px] flex justify-start data-[ison=dark]:justify-end rounded-[50px] p-[5px] cursor-pointer bg-[rgba(235,149,52,0.4)] data-[ison=dark]:bg-[rgba(149,52,235,0.4)] transition-colors duration-300"
+      className="w-15 h-7.5 flex justify-start data-[ison=dark]:justify-end rounded-[50px] p-1.25 cursor-pointer bg-[rgba(235,149,52,0.4)] data-[ison=dark]:bg-[rgba(149,52,235,0.4)] transition-colors duration-300"
     >
       <motion.div
         layout

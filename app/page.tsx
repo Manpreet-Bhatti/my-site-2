@@ -18,12 +18,12 @@ export default function Home() {
       </div>
       <div className="max-w-2xl w-full px-4 mx-auto">
         <div className="md:flex">
-          <div className="flex-grow">
+          <div className="grow">
             <h2 className="page-title">Manpreet Bhatti</h2>
             <p className="text-accent">Product Engineer @ Agentnoon</p>
           </div>
-          <div className="flex-shrink-0 mt-4 md:mt-0 md:ml-6 text-center">
-            <div className="border-2 border-accent w-[100px] h-[100px] inline-block rounded-full overflow-hidden">
+          <div className="shrink-0 mt-4 md:mt-0 md:ml-6 text-center">
+            <div className="border-2 border-accent w-25 h-25 inline-block rounded-full overflow-hidden">
               <Image
                 src="/images/manpreet-coding.png"
                 alt="Profile image"
@@ -37,20 +37,28 @@ export default function Home() {
 
         <div className="rounded-lg mb-6 p-3 text-center bg-[#f4f4f4] dark:bg-[rgba(255,255,255,0.12)] backdrop-blur-[10px]">
           I&apos;m a front-end (aspiring full-stack) developer based in{" "}
-          <span title="Canada" aria-label="Canada">🇨🇦</span>!
+          <span title="Canada" aria-label="Canada">
+            🇨🇦
+          </span>
+          !
         </div>
 
         <Section delay={0.1}>
           <h3 className="section-title">👨🏽‍💻 Who I am</h3>
           <p className="text-justify indent-4">
             As a product engineer at{" "}
-            <a className="red-link" href="https://agentnoon.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              className="red-link"
+              href="https://agentnoon.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Agentnoon
             </a>
             , I play a pivotal role in enhancing Agentnoon&apos;s applications.
-            Hailing from Ontario, I specialize in front-end technologies, crafting
-            intuitive and high-performing user experiences. I&apos;m always open
-            to exploring new opportunities, so feel free to connect!
+            Hailing from Ontario, I specialize in front-end technologies,
+            crafting intuitive and high-performing user experiences. I&apos;m
+            always open to exploring new opportunities, so feel free to connect!
           </p>
           <div className="text-center my-4">
             <Link
@@ -67,7 +75,12 @@ export default function Home() {
           <p className="text-justify indent-4">
             Giving back to my community is a joy for me; I help develop for my
             former university&apos;s hackathon,{" "}
-            <a className="red-link" href="https://hackthevalley.io/" target="_blank" rel="noopener noreferrer">
+            <a
+              className="red-link"
+              href="https://hackthevalley.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Hack The Valley
             </a>
             , as well as teach and mentor aspiring developers.
@@ -77,9 +90,9 @@ export default function Home() {
         <Section delay={0.3}>
           <h3 className="section-title">🍿 Off-hours</h3>
           <p className="text-justify indent-4">
-            When I&apos;m not developing, one of my hobbies is watching movies and
-            TV shows. For exploration and critical analysis purposes, I like to
-            immerse myself in all types of genres. That being said, action,
+            When I&apos;m not developing, one of my hobbies is watching movies
+            and TV shows. For exploration and critical analysis purposes, I like
+            to immerse myself in all types of genres. That being said, action,
             mystery, and sci-fi are the go-to.
           </p>
         </Section>
