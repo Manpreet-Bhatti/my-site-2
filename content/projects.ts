@@ -2,8 +2,8 @@ import { StaticImageData } from "next/image";
 
 import fulcrumDashboard from "@/public/images/projects/fulcrum/fulcrum_dashboard.png";
 
-import cascade from "@/public/images/projects/cascade.png";
-import cascadeChart from "@/public/images/projects/cascade_chart.png";
+import cascade from "@/public/images/projects/cascade/cascade.png";
+import cascadeChart from "@/public/images/projects/cascade/cascade_chart.png";
 
 import ticketmainStage from "@/public/images/projects/ticketmain/ticketmain_stage.png";
 
@@ -62,7 +62,8 @@ export const projects: Project[] = [
     role: "Developer",
     period: "Nov 2025",
     thumbnail: fulcrumDashboard,
-    tagline: "Reverse proxy and load balancer with health checks, circuit breaking, and real-time analytics",
+    tagline:
+      "Reverse proxy and load balancer with health checks, circuit breaking, and real-time analytics",
     paragraphs: [
       "A reverse proxy and load balancer built to distribute HTTP traffic across a cluster of backend servers, with a focus on concurrency control, fault tolerance, and observability.",
       "I implemented two routing strategies — Weighted Round Robin and Least Connections — backed by hybrid health checks: active TCP pings on a configurable interval, and a passive circuit breaker that instantly removes nodes spiking 5xx errors. Automatic failover retries make individual backend failures transparent to the client.",
@@ -77,9 +78,30 @@ export const projects: Project[] = [
       { label: "Platform", value: "Web" },
       { label: "Stack", value: "Go" },
     ],
-    images: [
-      { src: fulcrumDashboard, alt: "Fulcrum live dashboard" },
+    images: [{ src: fulcrumDashboard, alt: "Fulcrum live dashboard" }],
+  },
+  {
+    slug: "echovault",
+    title: "EchoVault",
+    role: "Developer",
+    period: "Nov 2025",
+    tagline:
+      "Redis-compatible in-memory key-value store with persistence, replication, and transactions",
+    paragraphs: [
+      "A high-performance in-memory key-value store built to be wire-compatible with the Redis Serialization Protocol (RESP), allowing interaction through the standard redis-cli without any client changes.",
+      "I implemented dual persistence strategies: Append Only File (AOF) logging for durability on every write, and automatic RDB snapshots every five minutes with manual BGSAVE support for point-in-time recovery.",
+      "The server supports Leader-Follower replication for high availability, with writes on the leader automatically propagating to followers. Atomic transactions are handled via MULTI/EXEC command buffering, and passive key eviction enforces TTL expiration. All concurrent connections are managed with goroutines and mutexes.",
     ],
+    meta: [
+      {
+        label: "GitHub",
+        value: "https://github.com/Manpreet-Bhatti/EchoVault",
+        href: "https://github.com/Manpreet-Bhatti/EchoVault",
+      },
+      { label: "Platform", value: "CLI" },
+      { label: "Stack", value: "Go" },
+    ],
+    images: [],
   },
   {
     slug: "ticketmain",
@@ -105,9 +127,7 @@ export const projects: Project[] = [
         value: "Go, Fiber, Redis, PostgreSQL, React, TypeScript, Docker",
       },
     ],
-    images: [
-      { src: ticketmainStage, alt: "Ticketmain seat map" },
-    ],
+    images: [{ src: ticketmainStage, alt: "Ticketmain seat map" }],
   },
   {
     slug: "cascade",
