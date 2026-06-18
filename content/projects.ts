@@ -41,7 +41,7 @@ export interface Project {
   title: string;
   role: string;
   period: string;
-  thumbnail: StaticImageData;
+  thumbnail?: StaticImageData;
   tagline: string;
   paragraphs: string[];
   meta: MetaItem[];
@@ -49,6 +49,28 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    slug: "cascade",
+    title: "Cascade",
+    role: "Developer",
+    period: "2024",
+    tagline: "Distributed log visualizer with real-time WebSocket streaming",
+    paragraphs: [
+      "A distributed log visualizer that simulates multiple microservices streaming logs to a central ingestor, displayed in real time on a React dashboard via WebSockets.",
+      "I built the backend ingestor using Node.js stream.Transform to handle high-volume log streams without memory issues, with Socket.io pushing events to the client instantly.",
+      "On the frontend, I used Recharts to visualize logs-per-second and built a scrollable, buffered log table with semantic highlighting by log level.",
+    ],
+    meta: [
+      {
+        label: "GitHub",
+        value: "https://github.com/Manpreet-Bhatti/Cascade",
+        href: "https://github.com/Manpreet-Bhatti/Cascade",
+      },
+      { label: "Platform", value: "Web" },
+      { label: "Stack", value: "Node.js, Express, Socket.io, MongoDB, React, TypeScript, TailwindCSS" },
+    ],
+    images: [],
+  },
   {
     slug: "menstruationnation",
     title: "Menstruation Nation",
