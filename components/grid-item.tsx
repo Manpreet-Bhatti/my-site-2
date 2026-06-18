@@ -18,10 +18,10 @@ interface DynamicGridItemProps {
 
 const ThumbnailPlaceholder = ({ title }: { title: string }) => (
   <div
-    className="rounded-xl flex items-center justify-center w-full"
-    style={{ height: 153, backgroundColor: "#6b4226", color: "#b83c63" }}
+    className="rounded-xl flex items-center justify-center w-full bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700"
+    style={{ height: 153 }}
   >
-    <span className="text-xl font-bold">{title}</span>
+    <span className="text-lg font-bold text-accent px-4 text-center">{title}</span>
   </div>
 );
 
