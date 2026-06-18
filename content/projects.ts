@@ -1,5 +1,7 @@
 import { StaticImageData } from "next/image";
 
+import fulcrumDashboard from "@/public/images/projects/fulcrum/fulcrum_dashboard.png";
+
 import cascade from "@/public/images/projects/cascade.png";
 import cascadeChart from "@/public/images/projects/cascade_chart.png";
 
@@ -54,6 +56,31 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    slug: "fulcrum",
+    title: "Fulcrum",
+    role: "Developer",
+    period: "Nov 2025",
+    thumbnail: fulcrumDashboard,
+    tagline: "Reverse proxy and load balancer with health checks, circuit breaking, and real-time analytics",
+    paragraphs: [
+      "A reverse proxy and load balancer built to distribute HTTP traffic across a cluster of backend servers, with a focus on concurrency control, fault tolerance, and observability.",
+      "I implemented two routing strategies — Weighted Round Robin and Least Connections — backed by hybrid health checks: active TCP pings on a configurable interval, and a passive circuit breaker that instantly removes nodes spiking 5xx errors. Automatic failover retries make individual backend failures transparent to the client.",
+      "On the resilience and security side, I built TLS termination to offload SSL processing at the entry point, and a per-IP Token Bucket rate limiter to guard against DDoS and noisy-neighbor exhaustion. A live dashboard visualizes connection pools, error rates, and server status in real time. All shared state is managed with sync/atomic and sync.RWMutex for safe concurrent access.",
+    ],
+    meta: [
+      {
+        label: "GitHub",
+        value: "https://github.com/Manpreet-Bhatti/Fulcrum",
+        href: "https://github.com/Manpreet-Bhatti/Fulcrum",
+      },
+      { label: "Platform", value: "Web" },
+      { label: "Stack", value: "Go" },
+    ],
+    images: [
+      { src: fulcrumDashboard, alt: "Fulcrum live dashboard" },
+    ],
+  },
   {
     slug: "ticketmain",
     title: "Ticketmain",
