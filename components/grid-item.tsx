@@ -13,8 +13,17 @@ interface DynamicGridItemProps {
   type: string;
   id: string;
   title: string;
-  thumbnail: StaticImageData;
+  thumbnail?: StaticImageData;
 }
+
+const ThumbnailPlaceholder = ({ title }: { title: string }) => (
+  <div
+    className="rounded-xl flex items-center justify-center w-full"
+    style={{ height: 153, backgroundColor: "#6b4226", color: "#b83c63" }}
+  >
+    <span className="text-xl font-bold">{title}</span>
+  </div>
+);
 
 export const GridItem = ({ children, href, title, thumbnail }: GridItemProps) => (
   <div className="w-full text-center">
@@ -41,13 +50,17 @@ export const GridItem = ({ children, href, title, thumbnail }: GridItemProps) =>
 export const DynamicGridItem = ({ children, type, id, title, thumbnail }: DynamicGridItemProps) => (
   <div className="w-full text-center">
     <Link href={`/${type}/${id}`} className="flex flex-col items-center cursor-pointer">
-      <Image
-        src={thumbnail}
-        alt={title}
-        className="rounded-xl"
-        placeholder="blur"
-        height={153}
-      />
+      {thumbnail ? (
+        <Image
+          src={thumbnail}
+          alt={title}
+          className="rounded-xl"
+          placeholder="blur"
+          height={153}
+        />
+      ) : (
+        <ThumbnailPlaceholder title={title} />
+      )}
       <p className="mt-2 text-xl">{title}</p>
       <p className="text-sm">{children}</p>
     </Link>
