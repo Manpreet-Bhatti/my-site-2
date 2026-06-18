@@ -1,5 +1,10 @@
 import { StaticImageData } from "next/image";
 
+import cascade from "@/public/images/projects/cascade.png";
+import cascadeChart from "@/public/images/projects/cascade_chart.png";
+
+import ticketmainStage from "@/public/images/projects/ticketmain/ticketmain_stage.png";
+
 import thumbMenstruationNation from "@/public/images/projects/menstruation_nation/mnation_logo.png";
 import thumbGrafGas from "@/public/images/projects/grafgas.jpg";
 import thumbAutoReadmeDocs from "@/public/images/projects/autoreadmedocs.jpg";
@@ -50,10 +55,38 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: "ticketmain",
+    title: "Ticketmain",
+    role: "Developer",
+    period: "Jun 2025",
+    thumbnail: ticketmainStage,
+    tagline: "High-concurrency ticket engine with distributed locking",
+    paragraphs: [
+      "A high-concurrency ticket booking engine built to solve the race condition problem: when thousands of users click 'Buy' simultaneously, how do you prevent double-bookings?",
+      "I implemented atomic distributed locking using Redis Lua scripts with SET NX, ensuring hold and release operations are race-condition free. Redis Pipelining batches thousands of seat state fetches into a single network roundtrip.",
+      "Real-time seat map updates are pushed instantly to all connected clients via WebSockets — when one user holds a seat, every other user sees it go grey immediately. The backend is built in Go with Fiber for high-performance HTTP and WebSocket handling, with PostgreSQL for ACID-compliant transaction recording.",
+    ],
+    meta: [
+      {
+        label: "GitHub",
+        value: "https://github.com/Manpreet-Bhatti/Ticketmain",
+        href: "https://github.com/Manpreet-Bhatti/Ticketmain",
+      },
+      { label: "Platform", value: "Web" },
+      {
+        label: "Stack",
+        value: "Go, Fiber, Redis, PostgreSQL, React, TypeScript, Docker",
+      },
+    ],
+    images: [
+      { src: ticketmainStage, alt: "Ticketmain seat map" },
+    ],
+  },
+  {
     slug: "cascade",
     title: "Cascade",
     role: "Developer",
-    period: "2024",
+    period: "Nov 2025",
     tagline: "Distributed log visualizer with real-time WebSocket streaming",
     paragraphs: [
       "A distributed log visualizer that simulates multiple microservices streaming logs to a central ingestor, displayed in real time on a React dashboard via WebSockets.",
@@ -67,9 +100,16 @@ export const projects: Project[] = [
         href: "https://github.com/Manpreet-Bhatti/Cascade",
       },
       { label: "Platform", value: "Web" },
-      { label: "Stack", value: "Node.js, Express, Socket.io, MongoDB, React, TypeScript, TailwindCSS" },
+      {
+        label: "Stack",
+        value:
+          "Node.js, Express, Socket.io, MongoDB, React, TypeScript, TailwindCSS",
+      },
     ],
-    images: [],
+    images: [
+      { src: cascade, alt: "Cascade dashboard" },
+      { src: cascadeChart, alt: "Cascade chart" },
+    ],
   },
   {
     slug: "menstruationnation",
@@ -82,7 +122,8 @@ export const projects: Project[] = [
     meta: [
       {
         label: "Website",
-        value: "https://play.google.com/store/apps/details?id=com.tpp.theperiodpurse",
+        value:
+          "https://play.google.com/store/apps/details?id=com.tpp.theperiodpurse",
         href: "https://play.google.com/store/apps/details?id=com.tpp.theperiodpurse",
       },
       {
@@ -117,7 +158,11 @@ export const projects: Project[] = [
       "To achieve such feats, I worked with fellow developers to implement a rigorous in-house DevOps environment and created a CI/CD pipeline to deploy code to micro-services hosted on AWS.",
     ],
     meta: [
-      { label: "Website", value: "https://www.grafgas.com/login", href: "https://www.grafgas.com/login" },
+      {
+        label: "Website",
+        value: "https://www.grafgas.com/login",
+        href: "https://www.grafgas.com/login",
+      },
       { label: "Platform", value: "Web" },
       { label: "Stack", value: "React, Redux, Django, AWS, PostgreSQL" },
     ],
@@ -163,7 +208,10 @@ export const projects: Project[] = [
       { src: autoreadmedocs01, alt: "Auto README Docs front page" },
       { src: autoreadmedocs02, alt: "Auto README Docs badges" },
       { src: autoreadmedocs03, alt: "Auto README Docs markdown tree" },
-      { src: autoreadmedocs04, alt: "Auto README Docs markdown tree continued" },
+      {
+        src: autoreadmedocs04,
+        alt: "Auto README Docs markdown tree continued",
+      },
     ],
   },
 ];
