@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s - Manpreet Bhatti",
   },
   description:
-    "All about Manpreet Bhatti; I'm a front end (aspiring full-stack) developer based in Canada! Get to know me as I showcase my projects, skills, and more!",
+    "All about Manpreet Bhatti; I'm a full-stack developer based in Canada! Get to know me as I showcase my projects, skills, and more!",
   authors: [{ name: "Manpreet Bhatti" }],
   openGraph: {
     siteName: "Manpreet Bhatti",
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://www.manpreetbhatti.com/",
     description:
-      "All about Manpreet Bhatti; I'm a front end (aspiring full-stack) developer based in Canada! Get to know me as I showcase my projects, skills, and more!",
+      "All about Manpreet Bhatti; I'm a full-stack developer based in Canada! Get to know me as I showcase my projects, skills, and more!",
     images: [{ url: "https://www.manpreetbhatti.com/images/MB-mono.svg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Manpreet Bhatti",
     description:
-      "All about Manpreet Bhatti; I'm a front end (aspiring full-stack) developer based in Canada! Get to know me as I showcase my projects, skills, and more!",
+      "All about Manpreet Bhatti; I'm a full-stack developer based in Canada! Get to know me as I showcase my projects, skills, and more!",
     images: ["https://www.manpreetbhatti.com/images/MB-mono.svg"],
   },
   icons: {
@@ -40,7 +40,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -52,6 +56,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className={`${mPlus1p.variable}`}>
+        <div className="w-full bg-yellow-400 text-black text-center text-sm py-2 px-4">
+          🚧 Under construction — some information may be outdated.
+        </div>
         <Navbar />
         <main className="flex flex-col min-h-screen items-center pt-15">
           {children}
