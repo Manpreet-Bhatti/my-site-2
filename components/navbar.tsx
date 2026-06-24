@@ -43,7 +43,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full backdrop-blur-[10px] z-[2]">
+    <nav className="w-full backdrop-blur-[10px]">
       <div className="max-w-2xl mx-auto flex p-2 flex-wrap items-center justify-between">
         <div className="flex items-center mr-5">
           <h1 className="text-lg font-semibold tracking-tighter">
