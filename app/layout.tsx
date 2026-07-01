@@ -56,13 +56,10 @@ export default function RootLayout({
         />
       </head>
       <body className={`${mPlus1p.variable}`}>
-        <div className="fixed top-0 w-full z-[2]">
-          <div className="w-full bg-yellow-400 text-black text-center text-sm py-2 px-4">
-            🚧 Under construction — some information may be outdated.
-          </div>
+        <div className="fixed top-0 w-full z-2">
           <Navbar />
         </div>
-        <main className="flex flex-col min-h-screen items-center pt-24">
+        <main className="flex flex-col min-h-screen items-center pt-15">
           {children}
           <footer className="text-center opacity-40 text-sm mt-auto pt-8 pb-2">
             Made with ❤️ by Manpreet Bhatti

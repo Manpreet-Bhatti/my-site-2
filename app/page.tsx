@@ -3,12 +3,12 @@ import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import { Linkedin, Github, Mail } from "lucide-react";
 import Section from "@/components/section";
-import { GridItem } from "@/components/grid-item";
+import { DynamicGridItem } from "@/components/grid-item";
 import SingleColumn from "@/components/layouts/single-column";
 import SakuraViewer from "@/components/sakura-viewer";
+import { projects } from "@/content/projects";
 
-import thumbMenstruationNation from "@/public/images/projects/menstruation_nation/mnation_logo.png";
-import thumbGrafGas from "@/public/images/projects/grafgas.jpg";
+const latestProjects = projects.slice(0, 2);
 
 export default function Home() {
   return (
@@ -36,7 +36,7 @@ export default function Home() {
         </div>
 
         <div className="rounded-lg mb-6 p-3 text-center bg-[#f4f4f4] dark:bg-[rgba(255,255,255,0.12)] backdrop-blur-[10px]">
-          I&apos;m a front-end (aspiring full-stack) developer based in{" "}
+          I&apos;m a full-stack developer based in{" "}
           <span title="Canada" aria-label="Canada">
             🇨🇦
           </span>
@@ -133,21 +133,17 @@ export default function Home() {
 
         <Section delay={0.4}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <GridItem
-              href="https://play.google.com/store/apps/details?id=com.tpp.theperiodpurse"
-              title="Menstruation Nation"
-              thumbnail={thumbMenstruationNation}
-            >
-              A free period tracker designed by youth for youth
-            </GridItem>
-            <GridItem
-              href="https://www.grafgas.com/"
-              title="Graf-Gas"
-              thumbnail={thumbGrafGas}
-            >
-              A data analytical dashboard with a focus on fleet driver fuel
-              consumption and transportation efficiency
-            </GridItem>
+            {latestProjects.map((project) => (
+              <DynamicGridItem
+                key={project.slug}
+                type="projects"
+                id={project.slug}
+                title={project.title}
+                thumbnail={project.thumbnail}
+              >
+                {project.tagline}
+              </DynamicGridItem>
+            ))}
           </div>
           <div className="text-center my-4">
             <Link

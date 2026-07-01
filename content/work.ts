@@ -49,21 +49,20 @@ export interface WorkEntry {
 export const workEntries: WorkEntry[] = [
   {
     slug: "agentnoon",
-    title: "Agentnoon",
-    role: "Product Engineer",
-    period: "Dec 2022 - Oct 2025",
+    title: "Dayforce",
+    role: "Software Developer, Strategic Workforce Planning",
+    period: "Dec 2022 - Present",
     thumbnail: thumbAgentnoon,
-    tagline:
-      "A software company that provides Real Time Work Force Planning for Fast HR System Integrations",
+    tagline: "Strategic Workforce Planning (formerly Agentnoon)",
     isRecent: true,
     description: [
-      "A software company that provides real-time workforce planning for fast HR system integrations.",
+      "Strategic Workforce Planning (SWP), formerly Agentnoon, provides real-time workforce planning for fast HR system integrations. Acquired by Dayforce in October 2025.",
     ],
     companyMeta: [
       {
         label: "Website",
-        value: "https://agentnoon.com/",
-        href: "https://agentnoon.com/",
+        value: "https://dayforce.com/",
+        href: "https://dayforce.com/",
       },
     ],
     subProjects: [

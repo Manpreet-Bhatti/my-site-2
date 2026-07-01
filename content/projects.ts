@@ -1,5 +1,9 @@
 import { StaticImageData } from "next/image";
 
+import inspectaiDashboard from "@/public/images/projects/inspectai/inspect_ai_dashboard.png";
+import inspectaiInspection from "@/public/images/projects/inspectai/inspect_ai_inspection.png";
+import inspectaiNewInspection from "@/public/images/projects/inspectai/inspect_ai_new_inspection.png";
+
 import fulcrumDashboard from "@/public/images/projects/fulcrum/fulcrum_dashboard.png";
 
 import cascade from "@/public/images/projects/cascade/cascade.png";
@@ -57,28 +61,36 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "fulcrum",
-    title: "Fulcrum",
+    slug: "inspectai",
+    title: "InspectAI",
     role: "Developer",
-    period: "Nov 2025",
-    thumbnail: fulcrumDashboard,
+    period: "Dec 2025 - Present",
+    thumbnail: inspectaiDashboard,
     tagline:
-      "Reverse proxy and load balancer with health checks, circuit breaking, and real-time analytics",
+      "Multi-modal AI property inspection platform turning photos and voice notes into structured reports",
     paragraphs: [
-      "A reverse proxy and load balancer built to distribute HTTP traffic across a cluster of backend servers, with a focus on concurrency control, fault tolerance, and observability.",
-      "I implemented two routing strategies — Weighted Round Robin and Least Connections — backed by hybrid health checks: active TCP pings on a configurable interval, and a passive circuit breaker that instantly removes nodes spiking 5xx errors. Automatic failover retries make individual backend failures transparent to the client.",
-      "On the resilience and security side, I built TLS termination to offload SSL processing at the entry point, and a per-IP Token Bucket rate limiter to guard against DDoS and noisy-neighbor exhaustion. A live dashboard visualizes connection pools, error rates, and server status in real time. All shared state is managed with sync/atomic and sync.RWMutex for safe concurrent access.",
+      "A multi-modal AI-powered property inspection platform built to turn field photos and voice notes into structured inspection reports, with a focus on automated issue detection, severity scoring, and cost estimation.",
+      "I implemented an inference pipeline on HuggingFace Inference Providers that runs uploaded photos and voice notes through object detection, severity classification, and speech-to-text models, converting raw field media into structured findings without manual write-up.",
+      "On the pattern-matching side, I built vector similarity search over pgvector to match new findings against a history of past inspections, surfacing comparable issues and cost estimates automatically. Photo and voice uploads are processed asynchronously through a queue, with Supabase Realtime pushing status updates to the client as each finding completes.",
     ],
     meta: [
       {
         label: "GitHub",
-        value: "https://github.com/Manpreet-Bhatti/Fulcrum",
-        href: "https://github.com/Manpreet-Bhatti/Fulcrum",
+        value: "https://github.com/Manpreet-Bhatti/inspectai",
+        href: "https://github.com/Manpreet-Bhatti/inspectai",
       },
       { label: "Platform", value: "Web" },
-      { label: "Stack", value: "Go" },
+      {
+        label: "Stack",
+        value:
+          "Next.js, React, TypeScript, Supabase, Python, FastAPI, Turborepo",
+      },
     ],
-    images: [{ src: fulcrumDashboard, alt: "Fulcrum live dashboard" }],
+    images: [
+      { src: inspectaiDashboard, alt: "InspectAI dashboard" },
+      { src: inspectaiInspection, alt: "InspectAI inspection detail" },
+      { src: inspectaiNewInspection, alt: "InspectAI new inspection" },
+    ],
   },
   {
     slug: "echovault",
@@ -102,6 +114,30 @@ export const projects: Project[] = [
       { label: "Stack", value: "Go" },
     ],
     images: [],
+  },
+  {
+    slug: "fulcrum",
+    title: "Fulcrum",
+    role: "Developer",
+    period: "Nov 2025",
+    thumbnail: fulcrumDashboard,
+    tagline:
+      "Reverse proxy and load balancer with health checks, circuit breaking, and real-time analytics",
+    paragraphs: [
+      "A reverse proxy and load balancer built to distribute HTTP traffic across a cluster of backend servers, with a focus on concurrency control, fault tolerance, and observability.",
+      "I implemented two routing strategies — Weighted Round Robin and Least Connections — backed by hybrid health checks: active TCP pings on a configurable interval, and a passive circuit breaker that instantly removes nodes spiking 5xx errors. Automatic failover retries make individual backend failures transparent to the client.",
+      "On the resilience and security side, I built TLS termination to offload SSL processing at the entry point, and a per-IP Token Bucket rate limiter to guard against DDoS and noisy-neighbor exhaustion. A live dashboard visualizes connection pools, error rates, and server status in real time. All shared state is managed with sync/atomic and sync.RWMutex for safe concurrent access.",
+    ],
+    meta: [
+      {
+        label: "GitHub",
+        value: "https://github.com/Manpreet-Bhatti/Fulcrum",
+        href: "https://github.com/Manpreet-Bhatti/Fulcrum",
+      },
+      { label: "Platform", value: "Web" },
+      { label: "Stack", value: "Go" },
+    ],
+    images: [{ src: fulcrumDashboard, alt: "Fulcrum live dashboard" }],
   },
   {
     slug: "ticketmain",
@@ -134,6 +170,7 @@ export const projects: Project[] = [
     title: "Cascade",
     role: "Developer",
     period: "Nov 2025",
+    thumbnail: cascade,
     tagline: "Distributed log visualizer with real-time WebSocket streaming",
     paragraphs: [
       "A distributed log visualizer that simulates multiple microservices streaming logs to a central ingestor, displayed in real time on a React dashboard via WebSockets.",
